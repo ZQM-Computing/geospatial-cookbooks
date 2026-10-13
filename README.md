@@ -2,6 +2,8 @@
 
 Production-tested geospatial patterns for every layer of the stack — from conversion (GDAL) to serving (STAC API).
 
+**ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. These patterns ground ZQM Labs games in real-world locations across Volusia County, Florida.
+
 ## The Stack
 
 ```
