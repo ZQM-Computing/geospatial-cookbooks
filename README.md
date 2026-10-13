@@ -4,6 +4,8 @@ Production-tested geospatial patterns for every layer of the stack — from conv
 
 **ZQM Computing** is the geospatial engineering arm of **ZQM Labs** — the games studio behind Z's Quests & Mischief. These patterns ground ZQM Labs games in real-world locations across Volusia County, Florida.
 
+ZQM Labs builds location-based scavenger-hunt games. ZQM Computing provides the geospatial engine: QGIS for desktop mapping, GDAL for asset conversion, GeoPandas for spatial analysis, PostGIS for system of record, pgRouting for route optimization, DuckDB for analytics, COG/STAC for raster serving, MapLibre for frontend, and H3 for location binning.
+
 ## The Stack
 
 ```
