@@ -1,5 +1,15 @@
 # ZQM Geospatial Patterns
 
+<!-- ZQM-START -->
+<p align="center">
+  <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
+  <a href="https://zqmlabs.com">zqmlabs.com</a> •
+  <a href="https://github.com/ZQM-Labs">GitHub</a>
+</p>
+<!-- ZQM-END -->
+
+
+
 [![CI](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml)
 
 The umbrella index for all ZQM Computing geospatial repositories — production-tested patterns for every layer of the stack, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
@@ -90,3 +100,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to zqmcomputing@g
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+
+<!-- ZQM-FOOTER-START -->
+---
+
+<p align="center">
+  <em>Play more. Plan less.</em><br>
+  <a href="https://zqmlabs.com">zqmlabs.com</a> •
+  <a href="https://github.com/ZQM-Labs">ZQM Labs</a> •
+  <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
+</p>
+<!-- ZQM-FOOTER-END -->
