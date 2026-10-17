@@ -20,6 +20,10 @@ Geospatial developers, GIS analysts, and data engineers who want one doorway int
 
 ## How to use this index
 
+Repository maintainers should follow the [geospatial repository documentation standard](docs/repository-documentation-standard.md) for prerequisites, reproducible examples, data provenance, CRS/SRID assumptions, dependency labels, and security guidance.
+
+## How to use this index
+
 Choose a repository by the problem you need to solve, then follow that repository's own prerequisites and quickstart. Treat the arrows in the diagram below as a conceptual workflow only: actual build-time, runtime, and data dependencies must be confirmed in each project's manifests, scripts, and deployment configuration.
 
 For a repository relationship to be considered verified, document:
