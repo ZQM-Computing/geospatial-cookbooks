@@ -1,11 +1,31 @@
-# Security policy
+# Security Policy
 
-## Supported version
+Report vulnerabilities to zqmcomputing@gmail.com.
 
-Security fixes are applied to the `main` branch. This repository is an index of the ZQM geospatial pattern repositories; it contains no executable code and is not a hosted service.
+## Scope
 
-## Reporting a vulnerability
+- All ZQM Computing public repositories
+- ZQM Labs infrastructure and tooling
 
-Email **zqmcomputing@gmail.com** with the subject `geospatial-patterns security` if you find a security problem in this index or in a linked repository's code. Please do not open a public issue for a sensitive report.
+## Reporting
 
-Include the affected repository and file, the impact you observed, and reproduction steps when available.
+- **Email**: zqmcomputing@gmail.com
+- **GitHub Security Advisory**: Use the "Security" tab on GitHub
+- Please do NOT open public issues for security vulnerabilities
+
+## What to Expect
+
+- Acknowledgment within 48 hours
+- Assessment and severity classification within 5 business days
+- Coordinated disclosure timeline agreed upon with reporter
+
+## Supported Versions
+
+| Version | Supported |
+|---------|-----------|
+| latest  | Yes        |
+| < latest| No         |
+
+---
+
+*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem.*
