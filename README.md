@@ -12,11 +12,23 @@
 
 [![CI](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml)
 
-The umbrella index for all ZQM Computing geospatial repositories — production-tested patterns for every layer of the stack, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
+The umbrella index for all ZQM Computing geospatial repositories — reusable patterns and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
 
 ## Who this is for
 
-Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each repo below is self-contained with runnable examples and validation; this index maps the stack so you can find the right layer.
+Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each linked repository documents its own examples and validation. This index is a subject-matter map, not proof that every repository is a production dependency or that the stack is deployed as one integrated system.
+
+## How to use this index
+
+Choose a repository by the problem you need to solve, then follow that repository's own prerequisites and quickstart. Treat the arrows in the diagram below as a conceptual workflow only: actual build-time, runtime, and data dependencies must be confirmed in each project's manifests, scripts, and deployment configuration.
+
+For a repository relationship to be considered verified, document:
+- relationship type (build dependency, runtime dependency, data flow, deployment, or documentation only);
+- direction and interface (package, command, API, file format, or artifact);
+- version/compatibility expectation;
+- a reproducible test or configuration proving the connection.
+
+A green CI badge means the linked workflow passed for a commit; it does not establish production use, operational support, or end-to-end integration.
 
 ## The stack
 
