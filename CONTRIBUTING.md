@@ -1,23 +1,34 @@
-# Contributing
+# Contributing to ZQM Computing
 
-This repository is the index of the ZQM Computing geospatial pattern repositories. Contributions keep the index accurate and useful.
+Thank you for your interest in contributing to ZQM Computing — geospatial patterns and tools.
 
-## What belongs here
+## How to Contribute
 
-- Corrections to the repository table (descriptions, links, ordering)
-- Improvements to the stack diagram or reading-path guidance
-- New sections that help a visitor choose which pattern repo to open first
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-Pattern content itself belongs in the individual repositories, not here — open the proposal there.
+## Code Standards
 
-## How to contribute
+- Follow existing code style
+- Add tests for new features
+- Update documentation as needed
+- Keep commits atomic and descriptive
+- All repos are MIT-licensed unless otherwise noted
 
-1. Open an issue (or a pull request directly for small fixes) describing the change.
-2. Keep the table alphabetical by repository name and descriptions to one line.
-3. One concern per pull request.
+## Reporting Issues
 
-## Ground rules
+- Use GitHub Issues for bug reports
+- Include steps to reproduce
+- Specify your environment (OS, version, etc)
+- For security vulnerabilities, see [SECURITY.md](SECURITY.md)
 
-- All data and examples referenced stay synthetic.
-- Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-- Report security issues by email per [SECURITY.md](SECURITY.md), not in a public issue.
+## Questions?
+
+Open an issue or discussion in the repository.
+
+---
+
+*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem — geospatial patterns and tools.*
