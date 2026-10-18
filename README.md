@@ -2,9 +2,9 @@
 
 <!-- ZQM-START -->
 <p align="center">
-  <strong>ZQM Labs — Z's Quests & Mischief</strong><br>
-  <a href="https://zqmlabs.com">zqmlabs.com</a> •
-  <a href="https://github.com/ZQM-Labs">GitHub</a>
+  <strong>ZQM Computing — Geospatial Engineering &amp; Scientific Computing</strong><br>
+  <a href="https://github.com/ZQM-Computing">ZQM Computing</a> ·
+  <a href="https://github.com/ZQM-Labs">ZQM Labs</a>
 </p>
 <!-- ZQM-END -->
 
@@ -18,7 +18,7 @@ The umbrella index for all ZQM Computing geospatial repositories — reusable pa
 
 Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each linked repository documents its own examples and validation. This index is a subject-matter map, not proof that every repository is a production dependency or that the stack is deployed as one integrated system.
 
-## How to use this index
+## Repository documentation standard
 
 Repository maintainers should follow the [geospatial repository documentation standard](docs/repository-documentation-standard.md) for prerequisites, reproducible examples, data provenance, CRS/SRID assumptions, dependency labels, and security guidance.
 
@@ -86,11 +86,15 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 
 ## Quickstart
 
-Pick a layer above and start with its README — every repo follows the same shape: who it's for, prerequisites, a runnable quickstart, a patterns catalog, and validation via `pytest`. For the Python stack broadly:
+This repository is an index, not an installable geospatial stack. Choose the smallest repository that addresses your task, open its README, and install only that project's documented prerequisites. Do not install every stack dependency globally: GDAL, PostGIS/pgRouting, DuckDB, STAC services, and browser examples have different runtime requirements.
 
-```bash
-pip install geopandas duckdb pystac rasterio h3
-```
+A safe starting sequence is:
+
+1. Select a repository from [The repositories](#the-repositories).
+2. Read its prerequisites and data-provenance notes before running commands.
+3. Use synthetic/sample data where provided; do not commit credentials or sensitive datasets.
+4. Run the validation command documented by that repository.
+5. Record the tested commit and environment when using results in a production workflow.
 
 ## Repository layout
 
@@ -105,13 +109,15 @@ geospatial-patterns/
 
 ## Validation
 
-CI lints the repository on every push and pull request.
+The index and the linked example repositories have separate validation responsibilities. A green badge is useful only for the exact workflow and commit it represents; it is not proof that every linked repository has been tested or that the projects work together end to end.
+
+Before relying on CI, inspect the linked workflow and confirm that it executes substantive checks rather than placeholder commands. The index should be treated as **not fully validated** until its own workflow checks the repository references and documentation. See [the repository documentation standard](docs/repository-documentation-standard.md).
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to zqmcomputing@gmail.com — please do not open a public issue for those.
 
-*Part of [ZQM Computing](https://github.com/ZQM-Computing) — games, gear & a little mischief.*
+*Part of [ZQM Computing](https://github.com/ZQM-Computing) — geospatial engineering, scientific computing, and infrastructure patterns.*
 
 ## License
 
@@ -122,9 +128,8 @@ MIT — see [LICENSE](LICENSE).
 ---
 
 <p align="center">
-  <em>Play more. Plan less.</em><br>
-  <a href="https://zqmlabs.com">zqmlabs.com</a> •
-  <a href="https://github.com/ZQM-Labs">ZQM Labs</a> •
-  <a href="https://github.com/ZQM-Computing">ZQM Computing</a>
+  <em>Geospatial engineering · Scientific computing · Reproducible patterns</em><br>
+  <a href="https://github.com/ZQM-Computing">ZQM Computing</a> ·
+  <a href="https://github.com/ZQM-Labs">ZQM Labs</a>
 </p>
 <!-- ZQM-FOOTER-END -->
