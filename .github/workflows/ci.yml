@@ -1,18 +1,27 @@
-name: ci
+name: CI
+
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
+
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - run: echo 'No tests configured yet.'
-  ci:
-    name: ci
-    needs: [validate]
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "validation passed"
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Compile validation tests
+        run: python -m compileall -q tests
+
+      - name: Validate repository index and documentation links
+        run: python -m unittest discover -s tests -v
