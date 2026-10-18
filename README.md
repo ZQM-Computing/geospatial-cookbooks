@@ -119,6 +119,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to zqmcomputing@g
 
 *Part of [ZQM Computing](https://github.com/ZQM-Computing) — geospatial engineering, scientific computing, and infrastructure patterns.*
 
+## Installation
+
+```bash
+pip install -e .
+```
+
+Requires Python 3.11+.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
