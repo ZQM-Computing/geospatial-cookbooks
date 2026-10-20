@@ -14,6 +14,16 @@
 
 The umbrella index for all ZQM Computing geospatial repositories — reusable patterns and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
 
+## Repository role and status
+
+**Status:** Active, public.
+
+**What this repository is:** The umbrella index for the ZQM Computing geospatial pattern series — one doorway into every pattern repository, organized by stack layer from format conversion (GDAL) through storage and indexing (PostGIS, H3, GeoParquet) to serving (OGC API, STAC, vector tiles). It also carries the series' repository documentation standard.
+
+**What it contributes:** The map of the portfolio. Each linked repository documents its own layer in depth; this repository is how a reader finds the right one, and it is portfolio evidence of the breadth of the geospatial engineering practice behind ZQM Computing.
+
+**Standing:** The portfolio program was completed and Tier-1 hardened on 2026-10-15, with prose CI enforced as required status checks. This repository is an index — the pattern repositories do not depend on it at runtime, and no deployment depends on it.
+
 ## Who this is for
 
 Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each linked repository documents its own examples and validation. This index is a subject-matter map, not proof that every repository is a production dependency or that the stack is deployed as one integrated system.
