@@ -127,6 +127,38 @@ pip install -e .
 
 Requires Python 3.11+.
 
+
+## Usage
+
+This repository contains production-tested patterns for geospatial data processing and analysis. Each pattern includes:
+
+- **Code examples** — Ready-to-use Python snippets
+- **Performance benchmarks** — Measured on real-world datasets
+- **Best practices** — Lessons learned from production deployments
+
+### Quick Start
+
+```python
+import geopandas as gpd
+
+# Read a GeoJSON file
+gdf = gpd.read_file("data.geojson")
+print(f"CRS: {gdf.crs}")
+print(f"Features: {len(gdf)}")
+print(f"Columns: {list(gdf.columns)}")
+```
+
+### Pattern Categories
+
+| Category | Description |
+|----------|-------------|
+| I/O | Reading and writing geospatial data formats |
+| CRS | Coordinate reference system transformations |
+| Geometry | Spatial operations and geometry manipulation |
+| Analysis | Spatial joins, overlays, and proximity analysis |
+| Visualization | Mapping and rendering geospatial data |
+
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
