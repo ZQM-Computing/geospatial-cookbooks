@@ -104,6 +104,9 @@ This repo is the index only:
 ```text
 geospatial-patterns/
 ├── README.md            # this index
+├── docs/                # documentation standard
+├── scripts/             # index validation helpers
+├── tests/               # validation tests
 ├── LICENSE
 └── CONTRIBUTING.md
 ```
@@ -119,44 +122,6 @@ Before relying on CI, inspect the linked workflow and confirm that it executes s
 See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to <zqmcomputing@gmail.com> — please do not open a public issue for those.
 
 *Part of [ZQM Computing](https://github.com/ZQM-Computing) — geospatial engineering, scientific computing, and infrastructure patterns.*
-
-## Installation
-
-```bash
-pip install -e .
-```
-
-Requires Python 3.11+.
-
-## Usage
-
-This repository contains production-tested patterns for geospatial data processing and analysis. Each pattern includes:
-
-- **Code examples** — Ready-to-use Python snippets
-- **Performance benchmarks** — Measured on real-world datasets
-- **Best practices** — Lessons learned from production deployments
-
-### Quick Start
-
-```python
-import geopandas as gpd
-
-# Read a GeoJSON file
-gdf = gpd.read_file("data.geojson")
-print(f"CRS: {gdf.crs}")
-print(f"Features: {len(gdf)}")
-print(f"Columns: {list(gdf.columns)}")
-```
-
-### Pattern Categories
-
-| Category | Description |
-|----------|-------------|
-| I/O | Reading and writing geospatial data formats |
-| CRS | Coordinate reference system transformations |
-| Geometry | Spatial operations and geometry manipulation |
-| Analysis | Spatial joins, overlays, and proximity analysis |
-| Visualization | Mapping and rendering geospatial data |
 
 <!-- ZQM-FOOTER-START -->
 <!-- markdownlint-disable MD033 -->
