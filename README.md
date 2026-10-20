@@ -1,14 +1,14 @@
 # ZQM Geospatial Patterns
 
 <!-- ZQM-START -->
+<!-- markdownlint-disable MD033 -->
 <p align="center">
   <strong>ZQM Computing — Geospatial Engineering &amp; Scientific Computing</strong><br>
   <a href="https://github.com/ZQM-Computing">ZQM Computing</a> ·
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-END -->
-
-
 
 [![CI](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml)
 
@@ -27,6 +27,7 @@ Repository maintainers should follow the [geospatial repository documentation st
 Choose a repository by the problem you need to solve, then follow that repository's own prerequisites and quickstart. Treat the arrows in the diagram below as a conceptual workflow only: actual build-time, runtime, and data dependencies must be confirmed in each project's manifests, scripts, and deployment configuration.
 
 For a repository relationship to be considered verified, document:
+
 - relationship type (build dependency, runtime dependency, data flow, deployment, or documentation only);
 - direction and interface (package, command, API, file format, or artifact);
 - version/compatibility expectation;
@@ -36,7 +37,7 @@ A green CI badge means the linked workflow passed for a commit; it does not esta
 
 ## The stack
 
-```
+```text
 Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record (PostGIS)
   → Routing (pgRouting) → Analytical (DuckDB) → Columnar (GeoParquet)
   → Raster (COG) → Discovery (STAC) → Frontend (MapLibre) → Grid (H3)
@@ -100,7 +101,7 @@ A safe starting sequence is:
 
 This repo is the index only:
 
-```
+```text
 geospatial-patterns/
 ├── README.md            # this index
 ├── LICENSE
@@ -115,7 +116,7 @@ Before relying on CI, inspect the linked workflow and confirm that it executes s
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to zqmcomputing@gmail.com — please do not open a public issue for those.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues to <zqmcomputing@gmail.com> — please do not open a public issue for those.
 
 *Part of [ZQM Computing](https://github.com/ZQM-Computing) — geospatial engineering, scientific computing, and infrastructure patterns.*
 
@@ -126,7 +127,6 @@ pip install -e .
 ```
 
 Requires Python 3.11+.
-
 
 ## Usage
 
@@ -158,13 +158,8 @@ print(f"Columns: {list(gdf.columns)}")
 | Analysis | Spatial joins, overlays, and proximity analysis |
 | Visualization | Mapping and rendering geospatial data |
 
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
-
 <!-- ZQM-FOOTER-START -->
+<!-- markdownlint-disable MD033 -->
 ---
 
 <p align="center">
@@ -172,4 +167,5 @@ MIT — see [LICENSE](LICENSE).
   <a href="https://github.com/ZQM-Computing">ZQM Computing</a> ·
   <a href="https://github.com/ZQM-Labs">ZQM Labs</a>
 </p>
+<!-- markdownlint-enable MD033 -->
 <!-- ZQM-FOOTER-END -->
