@@ -1,7 +1,7 @@
 site_name: Geospatial Patterns
 site_description: Umbrella index for all ZQM geospatial pattern repos
 site_author: ZQM Computing
-repo_url: https://github.com/ZQM-Computing/geospatial-patterns
+repo_url: https://github.com/ZQM-Computing/geospatial-cookbooks
 
 theme:
   name: material
