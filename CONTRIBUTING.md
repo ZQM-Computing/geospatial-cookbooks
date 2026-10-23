@@ -1,6 +1,6 @@
 # Contributing to ZQM Computing
 
-Thank you for your interest in contributing to ZQM Computing — geospatial patterns and tools.
+Thank you for your interest in contributing to ZQM Computing — geospatial cookbooks and tools.
 
 ## How to Contribute
 
@@ -31,4 +31,4 @@ Open an issue or discussion in the repository.
 
 ---
 
-*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem — geospatial patterns and tools.*
+*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem — geospatial cookbooks and tools.*

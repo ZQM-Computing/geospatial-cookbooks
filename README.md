@@ -12,7 +12,7 @@
 
 [![CI](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml)
 
-The umbrella index for all ZQM Computing geospatial repositories — reusable patterns and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
+The umbrella index for all ZQM Computing geospatial repositories — reusable cookbooks and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
 
 ## Repository role and status
 
@@ -93,7 +93,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 | Repo | What it covers |
 |------|----------------|
 | [proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations) | Proxmox VE + Ceph operations runbooks: health checks, backup discipline, OSD replacement, upgrade checklists |
-| [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) | Ollama fleet operations: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG |
+| [ollama-fleet-cookbook](https://github.com/ZQM-Computing/ollama-fleet-cookbook) | Ollama fleet operations cookbook: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG |
 
 ## Quickstart
 
@@ -112,7 +112,7 @@ A safe starting sequence is:
 This repo is the index only:
 
 ```text
-geospatial-patterns/
+geospatial-cookbooks/
 ├── README.md            # this index
 ├── docs/                # documentation standard
 ├── scripts/             # index validation helpers
