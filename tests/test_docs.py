@@ -1,5 +1,5 @@
 """
-Tests for geospatial-patterns repository structure and content.
+Tests for geospatial-cookbooks repository structure and content.
 """
 import os
 from pathlib import Path

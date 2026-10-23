@@ -1,4 +1,4 @@
-"""Executable checks for the geospatial-patterns umbrella index.
+"""Executable checks for the geospatial-cookbooks umbrella index.
 
 These checks validate the index and local documentation links only. They do not
 claim that every linked repository builds, passes tests, or is deployed.
