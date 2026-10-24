@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "owner": "ZQM-Computing",
+  "last_inventory_reviewed": "2026-10-24",
+  "purpose": "Canonical repository slugs for links in the public geospatial portfolio index. This is a documentation registry, not a dependency or deployment graph.",
+  "repositories": [
+    {"slug": "postgis-cookbook", "layer": "data-analysis"},
+    {"slug": "duckdb-spatial-cookbook", "layer": "data-analysis"},
+    {"slug": "geopandas-cookbook", "layer": "data-analysis"},
+    {"slug": "pgrouting-cookbook", "layer": "data-analysis"},
+    {"slug": "h3-cookbook", "layer": "data-analysis"},
+    {"slug": "gdal-cookbook", "layer": "formats-conversion"},
+    {"slug": "cog-cookbook", "layer": "formats-conversion"},
+    {"slug": "geoparquet-cookbook", "layer": "formats-conversion"},
+    {"slug": "stac-cookbook", "layer": "discovery-serving"},
+    {"slug": "geospatial-api-reference", "layer": "discovery-serving"},
+    {"slug": "maplibre-cookbook", "layer": "discovery-serving"},
+    {"slug": "qgis-resources", "layer": "desktop-field"},
+    {"slug": "proxmox-ceph-operations", "layer": "infrastructure-operations"},
+    {"slug": "ollama-fleet-cookbook", "layer": "infrastructure-operations"}
+  ]
+}
