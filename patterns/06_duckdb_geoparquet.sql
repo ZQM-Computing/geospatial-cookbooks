@@ -1,0 +1,1 @@
+-- Pattern 06: DuckDB + GeoParquet

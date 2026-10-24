@@ -1,0 +1,1 @@
+-- Pattern 08: STAC + COG
