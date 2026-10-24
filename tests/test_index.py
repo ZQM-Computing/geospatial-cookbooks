@@ -17,7 +17,7 @@ README = README_PATH.read_text(encoding="utf-8")
 class RepositoryIndexTests(unittest.TestCase):
     def test_readme_has_one_top_level_heading_and_computing_brand(self) -> None:
         headings = [line for line in README.splitlines() if line.startswith("# ")]
-        self.assertEqual(headings, ["# ZQM Geospatial Patterns"])
+        self.assertEqual(headings, ["# ZQM Geospatial Cookbooks"])
         self.assertIn("<strong>ZQM Computing — Geospatial Engineering &amp; Scientific Computing</strong>", README)
         self.assertNotIn("<strong>ZQM Labs", README)
 
