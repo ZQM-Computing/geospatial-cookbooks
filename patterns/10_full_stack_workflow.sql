@@ -1,1 +1,0 @@
--- Pattern 10: full-stack workflow

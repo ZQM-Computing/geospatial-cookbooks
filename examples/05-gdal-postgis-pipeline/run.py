@@ -1,1 +1,0 @@
-print("gdal-postgis-pipeline")

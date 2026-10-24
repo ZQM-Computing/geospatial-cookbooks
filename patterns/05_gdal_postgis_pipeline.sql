@@ -1,1 +1,0 @@
--- Pattern 05: GDAL + PostGIS pipeline
