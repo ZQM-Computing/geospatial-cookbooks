@@ -10,6 +10,7 @@
 <!-- markdownlint-enable MD033 -->
 <!-- ZQM-END -->
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub](https://img.shields.io/github/stars/ZQM-Computing/geospatial-cookbooks?style=social)
 [![CI](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml)
 
 The umbrella index for all ZQM Computing geospatial repositories — reusable pattern libraries and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
