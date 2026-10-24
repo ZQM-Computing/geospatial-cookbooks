@@ -11,7 +11,7 @@
 <!-- ZQM-END -->
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub](https://img.shields.io/github/stars/ZQM-Computing/geospatial-cookbooks?style=social)
-[![CI](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-patterns/actions/workflows/ci.yml)
+[![CI](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml)
 
 The umbrella index for all ZQM Computing geospatial repositories — reusable pattern libraries and examples across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
 
@@ -61,27 +61,27 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 
 | Repo | What it covers |
 |------|----------------|
-| [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) | Production PostGIS cookbook: spatial indexing, joins & KNN, SRID management, vector tiles, data quality, partitioning |
-| [duckdb-spatial-patterns](https://github.com/ZQM-Computing/duckdb-spatial-patterns) | DuckDB Spatial cookbook for analytical geospatial SQL: GeoParquet, spatial joins, KNN, H3 aggregation — no server required |
-| [geopandas-patterns](https://github.com/ZQM-Computing/geopandas-patterns) | GeoPandas/Shapely cookbook for Python geospatial workflows: spatial joins, CRS handling, overlays, interpolation, performance |
-| [pgrouting-patterns](https://github.com/ZQM-Computing/pgrouting-patterns) | pgRouting network analysis on PostGIS: shortest path, driving distance, isochrones, turn restrictions, traffic-aware routing |
-| [h3-patterns](https://github.com/ZQM-Computing/h3-patterns) | H3 hexagonal grid cookbook: indexing, aggregation, visualization, grid comparisons, performance benchmarks |
+| [postgis-cookbook](https://github.com/ZQM-Computing/postgis-cookbook) | Production PostGIS cookbook: spatial indexing, joins & KNN, SRID management, vector tiles, data quality, partitioning |
+| [duckdb-spatial-cookbook](https://github.com/ZQM-Computing/duckdb-spatial-cookbook) | DuckDB Spatial cookbook for analytical geospatial SQL: GeoParquet, spatial joins, KNN, H3 aggregation — no server required |
+| [geopandas-cookbook](https://github.com/ZQM-Computing/geopandas-cookbook) | GeoPandas/Shapely cookbook for Python geospatial workflows: spatial joins, CRS handling, overlays, interpolation, performance |
+| [pgrouting-cookbook](https://github.com/ZQM-Computing/pgrouting-cookbook) | pgRouting network analysis on PostGIS: shortest path, driving distance, isochrones, turn restrictions, traffic-aware routing |
+| [h3-cookbook](https://github.com/ZQM-Computing/h3-cookbook) | H3 hexagonal grid cookbook: indexing, aggregation, visualization, grid comparisons, performance benchmarks |
 
 ### Formats & conversion
 
 | Repo | What it covers |
 |------|----------------|
-| [gdal-patterns](https://github.com/ZQM-Computing/gdal-patterns) | GDAL/OGR command-line cookbook: conversion, reprojection, clipping, mosaicking — production-tested, runnable examples |
-| [cog-patterns](https://github.com/ZQM-Computing/cog-patterns) | Cloud Optimized GeoTIFF cookbook: creation, validation, TiTiler serving, xarray integration, performance benchmarking |
-| [geoparquet-patterns](https://github.com/ZQM-Computing/geoparquet-patterns) | GeoParquet cookbook for columnar geospatial analytics: partitioning, predicate pushdown, DuckDB/Spark integration |
+| [gdal-cookbook](https://github.com/ZQM-Computing/gdal-cookbook) | GDAL/OGR command-line cookbook: conversion, reprojection, clipping, mosaicking — production-tested, runnable examples |
+| [cog-cookbook](https://github.com/ZQM-Computing/cog-cookbook) | Cloud Optimized GeoTIFF cookbook: creation, validation, TiTiler serving, xarray integration, performance benchmarking |
+| [geoparquet-cookbook](https://github.com/ZQM-Computing/geoparquet-cookbook) | GeoParquet cookbook for columnar geospatial analytics: partitioning, predicate pushdown, DuckDB/Spark integration |
 
 ### Discovery & serving
 
 | Repo | What it covers |
 |------|----------------|
-| [stac-patterns](https://github.com/ZQM-Computing/stac-patterns) | STAC cookbook for geospatial data discovery: catalogs, item validation, search API, bulk operations, cloud deployment |
+| [stac-cookbook](https://github.com/ZQM-Computing/stac-cookbook) | STAC cookbook for geospatial data discovery: catalogs, item validation, search API, bulk operations, cloud deployment |
 | [geospatial-api-reference](https://github.com/ZQM-Computing/geospatial-api-reference) | OGC API – Features reference implementation with FastAPI and PostGIS backends |
-| [maplibre-patterns](https://github.com/ZQM-Computing/maplibre-patterns) | MapLibre GL JS cookbook for frontend vector tile rendering: custom layers, 3D terrain, performance tuning, interactive maps |
+| [maplibre-cookbook](https://github.com/ZQM-Computing/maplibre-cookbook) | MapLibre GL JS cookbook for frontend vector tile rendering: custom layers, 3D terrain, performance tuning, interactive maps |
 
 ### Desktop & field
 
@@ -113,7 +113,7 @@ A safe starting sequence is:
 This repo is the index only:
 
 ```text
-geospatial-patterns/
+geospatial-cookbooks/
 ├── README.md            # this index
 ├── docs/                # documentation standard
 ├── scripts/             # index validation helpers
