@@ -66,7 +66,7 @@ class RepositoryIndexTests(unittest.TestCase):
         self.assertEqual(missing, [], f"Broken local README links: {missing}")
 
     def test_all_repository_root_links_use_canonical_slugs(self) -> None:
-        links = re.findall(r"\\[([^\\]]+)\\]\\((https://github\\.com/ZQM-Computing/[^)]+)\\)", README)
+        links = re.findall(r"\[([^\]]+)\]\((https://github\.com/ZQM-Computing/[^)]+)\)", README)
         for label, url in links:
             parts = url.rstrip("/").split("/")
             # Ignore organization pages and file/workflow URLs; this check is
