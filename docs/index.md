@@ -1,6 +1,3 @@
-Title: Geospatial Patterns
-Description: Practical GIS and geospatial engineering examples across QGIS, GDAL, GeoPandas, PostGIS, DuckDB Spatial, GeoParquet, H3, STAC, COG, OGC APIs, and web mapping.
-
 # Geospatial Patterns
 
 Umbrella index for all ZQM geospatial pattern repos.
