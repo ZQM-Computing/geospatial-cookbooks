@@ -120,7 +120,7 @@ class RepositoryIndexTests(unittest.TestCase):
                 self.assertFalse(slug.endswith("-patterns"), f"Obsolete repository slug in index: {url}")
 
     def test_validation_description_matches_actual_scope(self) -> None:
-        self.assertIn("does not live-check the availability of remote GitHub repositories", README)
+        self.assertIn("does not live-check remote GitHub availability", README)
         self.assertIn("does not establish production readiness or end-to-end integration", README)
 
     def test_repository_documentation_standard_exists(self) -> None:
