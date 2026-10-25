@@ -65,6 +65,23 @@ class RepositoryIndexTests(unittest.TestCase):
                 missing.append(target)
         self.assertEqual(missing, [], f"Broken local README links: {missing}")
 
+    def test_all_repository_root_links_use_canonical_slugs(self) -> None:
+        links = re.findall(r"\\[([^\\]]+)\\]\\((https://github\\.com/ZQM-Computing/[^)]+)\\)", README)
+        for label, url in links:
+            parts = url.rstrip("/").split("/")
+            # Ignore organization pages and file/workflow URLs; this check is
+            # specifically for links to a repository's root page.
+            if len(parts) != 5:
+                continue
+            slug = parts[-1]
+            with self.subTest(label=label, url=url):
+                self.assertEqual(label, slug, f"Repository link label differs from canonical slug: {label} -> {url}")
+                self.assertFalse(slug.endswith("-patterns"), f"Obsolete repository slug in index: {url}")
+
+    def test_validation_description_matches_actual_scope(self) -> None:
+        self.assertIn("does not live-check the availability of remote GitHub repositories", README)
+        self.assertIn("does not establish production readiness or end-to-end integration", README)
+
     def test_repository_documentation_standard_exists(self) -> None:
         self.assertTrue((ROOT / "docs" / "repository-documentation-standard.md").is_file())
 
