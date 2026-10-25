@@ -5,6 +5,7 @@ claim that every linked repository builds, passes tests, or is deployed.
 """
 from __future__ import annotations
 
+import json
 import re
 import unittest
 from pathlib import Path
@@ -49,6 +50,46 @@ class RepositoryIndexTests(unittest.TestCase):
             self.assertEqual(label, parts[-1], f"Link label and repository slug differ: {label} -> {url}")
             slugs.append(parts[-1])
         self.assertEqual(len(slugs), len(set(slugs)), "Repository table contains duplicate repository entries")
+
+    def test_repository_manifest_matches_readme_table(self) -> None:
+        manifest_path = ROOT / "docs" / "repository-manifest.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual(manifest.get("schema_version"), 1)
+        self.assertEqual(manifest.get("owner"), "ZQM-Computing")
+
+        repositories = manifest.get("repositories")
+        self.assertIsInstance(repositories, list)
+        manifest_names: list[str] = []
+        for entry in repositories:
+            self.assertIsInstance(entry, dict)
+            name = entry.get("name")
+            url = entry.get("url")
+            self.assertIsInstance(name, str)
+            self.assertTrue(name)
+            self.assertEqual(url, f"https://github.com/ZQM-Computing/{name}")
+            manifest_names.append(name)
+
+        self.assertEqual(
+            len(manifest_names),
+            len(set(manifest_names)),
+            "Canonical repository manifest contains duplicate names",
+        )
+        rows = re.findall(
+            r"^\\|\\s*\\[([^\\]]+)\\]\\((https://github\\.com/[^)]+)\\)\\s*\\|",
+            README,
+            flags=re.MULTILINE,
+        )
+        readme_names = [label for label, _url in rows]
+        readme_urls = dict(rows)
+        self.assertEqual(
+            set(readme_names),
+            set(manifest_names),
+            "README repository table and canonical manifest differ; update both together",
+        )
+        self.assertEqual(len(readme_names), len(set(readme_names)), "README contains duplicate repository entries")
+        for name in manifest_names:
+            with self.subTest(repository=name):
+                self.assertEqual(readme_urls[name], f"https://github.com/ZQM-Computing/{name}")
 
     def test_local_markdown_links_resolve(self) -> None:
         links = re.findall(r"\[[^\]]*\]\(([^)]+)\)", README)
