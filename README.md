@@ -126,7 +126,7 @@ geospatial-cookbooks/
 
 The index and the linked example repositories have separate validation responsibilities. A green badge is useful only for the exact workflow and commit it represents; it is not proof that every linked repository has been tested or that the projects work together end to end.
 
-Before relying on CI, inspect the linked workflow and confirm that it executes substantive checks rather than placeholder commands. The index should be treated as **not fully validated** until its own workflow checks the repository references and documentation. See [the repository documentation standard](docs/repository-documentation-standard.md).
+The index CI checks repository-table structure, canonical owner/slug consistency, and local Markdown links. It does not live-check the availability of remote GitHub repositories or prove that linked examples run or integrate together. Review the exact workflow and target repository before relying on any external example. See [the repository documentation standard](docs/repository-documentation-standard.md).
 
 ## Contributing
 
