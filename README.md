@@ -23,7 +23,7 @@ The umbrella index for all ZQM Computing geospatial repositories — reusable pa
 
 **What it contributes:** The map of the portfolio. Each linked repository documents its own layer in depth; this repository is how a reader finds the right one, and it is portfolio evidence of the breadth of the geospatial engineering practice behind ZQM Computing.
 
-**Standing:** The portfolio program was completed and Tier-1 hardened on 2026-10-15, with prose CI enforced as required status checks. This repository is an index — the pattern repositories do not depend on it at runtime, and no deployment depends on it.
+**Standing:** This repository is a documentation index. Its references and its own CI should be verified independently; a completed documentation pass does not establish production readiness or end-to-end integration. The pattern repositories do not depend on this index at runtime, and no deployment depends on it.
 
 ## Who this is for
 
@@ -94,7 +94,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 | Repo | What it covers |
 |------|----------------|
 | [proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations) | Proxmox VE + Ceph operations runbooks: health checks, backup discipline, OSD replacement, upgrade checklists |
-| [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) | Ollama fleet operations cookbook: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG |
+| [ollama-fleet-cookbook](https://github.com/ZQM-Computing/ollama-fleet-cookbook) | Ollama fleet operations cookbook: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG |
 
 ## Quickstart
 
