@@ -17,7 +17,7 @@ The umbrella index for all ZQM Computing geospatial repositories — reusable ex
 
 ## Related application: ZQM Observatory
 
-[ZQM Observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application that may reuse patterns documented by this cookbook series. It is not part of the cookbook index manifest, and the link does not assert runtime dependencies or end-to-end integration. See its [geospatial repository integration map](https://github.com/ZQM-Computing/zqm-observatory/blob/main/docs/geospatial-repository-integration.md) for proposed handoffs and the evidence required before calling them verified.
+[zqm-observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application that may reuse patterns documented by this cookbook series. It is not part of the cookbook index manifest, and the link does not assert runtime dependencies or end-to-end integration. See its [geospatial repository integration map](https://github.com/ZQM-Computing/zqm-observatory/blob/main/docs/geospatial-repository-integration.md) for proposed handoffs and the evidence required before calling them verified.
 
 ## Repository role and status
 
