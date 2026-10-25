@@ -33,6 +33,10 @@ Explore the ZQM Computing geospatial cookbook series: practical GIS and spatial-
 
 Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each linked repository documents its own examples and validation. This index is a subject-matter map, not proof that every repository is a production dependency or that the stack is deployed as one integrated system.
 
+## Cookbook quality gates
+
+Use the [cookbook quality gates](docs/COOKBOOK_QUALITY_GATES.md) to assess reproducibility, behavioral correctness, runtime validation, integration evidence, and operational safety consistently across the series. The rubric distinguishes confirmed defects from work that has not yet been verified; it does not imply that every repository has passed.
+
 ## Repository documentation standard
 
 Repository maintainers should follow the [geospatial repository documentation standard](docs/repository-documentation-standard.md) for prerequisites, reproducible examples, data provenance, CRS/SRID assumptions, dependency labels, and security guidance.
