@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "owner": "ZQM-Computing",
+  "purpose": "Canonical repository slugs for the geospatial-cookbooks README index. This inventory validates names and links; it does not assert repository availability, health, or integration.",
+  "repositories": [
+    {
+      "name": "postgis-cookbook",
+      "url": "https://github.com/ZQM-Computing/postgis-cookbook"
+    },
+    {
+      "name": "duckdb-spatial-cookbook",
+      "url": "https://github.com/ZQM-Computing/duckdb-spatial-cookbook"
+    },
+    {
+      "name": "geopandas-cookbook",
+      "url": "https://github.com/ZQM-Computing/geopandas-cookbook"
+    },
+    {
+      "name": "pgrouting-cookbook",
+      "url": "https://github.com/ZQM-Computing/pgrouting-cookbook"
+    },
+    {
+      "name": "h3-cookbook",
+      "url": "https://github.com/ZQM-Computing/h3-cookbook"
+    },
+    {
+      "name": "gdal-cookbook",
+      "url": "https://github.com/ZQM-Computing/gdal-cookbook"
+    },
+    {
+      "name": "cog-cookbook",
+      "url": "https://github.com/ZQM-Computing/cog-cookbook"
+    },
+    {
+      "name": "geoparquet-cookbook",
+      "url": "https://github.com/ZQM-Computing/geoparquet-cookbook"
+    },
+    {
+      "name": "stac-cookbook",
+      "url": "https://github.com/ZQM-Computing/stac-cookbook"
+    },
+    {
+      "name": "geospatial-api-reference",
+      "url": "https://github.com/ZQM-Computing/geospatial-api-reference"
+    },
+    {
+      "name": "maplibre-cookbook",
+      "url": "https://github.com/ZQM-Computing/maplibre-cookbook"
+    },
+    {
+      "name": "qgis-resources",
+      "url": "https://github.com/ZQM-Computing/qgis-resources"
+    },
+    {
+      "name": "proxmox-ceph-operations",
+      "url": "https://github.com/ZQM-Computing/proxmox-ceph-operations"
+    },
+    {
+      "name": "ollama-fleet-cookbook",
+      "url": "https://github.com/ZQM-Computing/ollama-fleet-cookbook"
+    }
+  ]
+}
