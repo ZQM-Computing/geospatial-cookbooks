@@ -13,7 +13,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub](https://img.shields.io/github/stars/ZQM-Computing/geospatial-cookbooks?style=social)
 [![CI](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Computing/geospatial-cookbooks/actions/workflows/ci.yml)
 
-The umbrella index for all ZQM Computing geospatial repositories — reusable examples and documentation across geospatial stack layers, from format conversion (GDAL) to serving (OGC API, STAC, vector tiles).
+Explore the ZQM Computing geospatial cookbook series: practical GIS and spatial-data engineering examples for QGIS, GDAL, GeoPandas, PostGIS, DuckDB Spatial, GeoParquet, H3, STAC, Cloud Optimized GeoTIFFs, OGC APIs, and browser mapping. Each repository documents its own prerequisites and validation scope; the index does not imply a deployed end-to-end stack.
 
 ## Related application: ZQM Observatory
 
