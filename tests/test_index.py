@@ -75,7 +75,7 @@ class RepositoryIndexTests(unittest.TestCase):
             "Canonical repository manifest contains duplicate names",
         )
         rows = re.findall(
-            r"^\\|\\s*\\[([^\\]]+)\\]\\((https://github\\.com/[^)]+)\\)\\s*\\|",
+            r"^\|\s*\[([^\]]+)\]\((https://github\.com/[^)]+)\)\s*\|",
             README,
             flags=re.MULTILINE,
         )
