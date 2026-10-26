@@ -58,6 +58,322 @@
     {
       "name": "ollama-fleet-cookbook",
       "url": "https://github.com/ZQM-Computing/ollama-fleet-cookbook"
+    },
+    {
+      "name": "geoserver-cookbook",
+      "url": "https://github.com/ZQM-Computing/geoserver-cookbook"
+    },
+    {
+      "name": "titiler-cookbook",
+      "url": "https://github.com/ZQM-Computing/titiler-cookbook"
+    },
+    {
+      "name": "pgstac-cookbook",
+      "url": "https://github.com/ZQM-Computing/pgstac-cookbook"
+    },
+    {
+      "name": "martin-cookbook",
+      "url": "https://github.com/ZQM-Computing/martin-cookbook"
+    },
+    {
+      "name": "pdal-cookbook",
+      "url": "https://github.com/ZQM-Computing/pdal-cookbook"
+    },
+    {
+      "name": "grass-cookbook",
+      "url": "https://github.com/ZQM-Computing/grass-cookbook"
+    },
+    {
+      "name": "saga-cookbook",
+      "url": "https://github.com/ZQM-Computing/saga-cookbook"
+    },
+    {
+      "name": "whitebox-cookbook",
+      "url": "https://github.com/ZQM-Computing/whitebox-cookbook"
+    },
+    {
+      "name": "cloudcompare-cookbook",
+      "url": "https://github.com/ZQM-Computing/cloudcompare-cookbook"
+    },
+    {
+      "name": "mapserver-cookbook",
+      "url": "https://github.com/ZQM-Computing/mapserver-cookbook"
+    },
+    {
+      "name": "geonetwork-cookbook",
+      "url": "https://github.com/ZQM-Computing/geonetwork-cookbook"
+    },
+    {
+      "name": "elasticsearch-cookbook",
+      "url": "https://github.com/ZQM-Computing/elasticsearch-cookbook"
+    },
+    {
+      "name": "minio-cookbook",
+      "url": "https://github.com/ZQM-Computing/minio-cookbook"
+    },
+    {
+      "name": "prefect-cookbook",
+      "url": "https://github.com/ZQM-Computing/prefect-cookbook"
+    },
+    {
+      "name": "nifi-cookbook",
+      "url": "https://github.com/ZQM-Computing/nifi-cookbook"
+    },
+    {
+      "name": "dlt-cookbook",
+      "url": "https://github.com/ZQM-Computing/dlt-cookbook"
+    },
+    {
+      "name": "dbt-cookbook",
+      "url": "https://github.com/ZQM-Computing/dbt-cookbook"
+    },
+    {
+      "name": "nodered-cookbook",
+      "url": "https://github.com/ZQM-Computing/nodered-cookbook"
+    },
+    {
+      "name": "pgpointcloud-cookbook",
+      "url": "https://github.com/ZQM-Computing/pgpointcloud-cookbook"
+    },
+    {
+      "name": "grafana-cookbook",
+      "url": "https://github.com/ZQM-Computing/grafana-cookbook"
+    },
+    {
+      "name": "prometheus-cookbook",
+      "url": "https://github.com/ZQM-Computing/prometheus-cookbook"
+    },
+    {
+      "name": "mosquitto-cookbook",
+      "url": "https://github.com/ZQM-Computing/mosquitto-cookbook"
+    },
+    {
+      "name": "osmnx-cookbook",
+      "url": "https://github.com/ZQM-Computing/osmnx-cookbook"
+    },
+    {
+      "name": "rasterio-cookbook",
+      "url": "https://github.com/ZQM-Computing/rasterio-cookbook"
+    },
+    {
+      "name": "scrapy-cookbook",
+      "url": "https://github.com/ZQM-Computing/scrapy-cookbook"
+    },
+    {
+      "name": "theharvester-cookbook",
+      "url": "https://github.com/ZQM-Computing/theharvester-cookbook"
+    },
+    {
+      "name": "spiderfoot-cookbook",
+      "url": "https://github.com/ZQM-Computing/spiderfoot-cookbook"
+    },
+    {
+      "name": "amass-cookbook",
+      "url": "https://github.com/ZQM-Computing/amass-cookbook"
+    },
+    {
+      "name": "sherlock-cookbook",
+      "url": "https://github.com/ZQM-Computing/sherlock-cookbook"
+    },
+    {
+      "name": "maigret-cookbook",
+      "url": "https://github.com/ZQM-Computing/maigret-cookbook"
+    },
+    {
+      "name": "shodan-cookbook",
+      "url": "https://github.com/ZQM-Computing/shodan-cookbook"
+    },
+    {
+      "name": "sentinelsat-cookbook",
+      "url": "https://github.com/ZQM-Computing/sentinelsat-cookbook"
+    },
+    {
+      "name": "reconng-cookbook",
+      "url": "https://github.com/ZQM-Computing/reconng-cookbook"
+    },
+    {
+      "name": "nuclei-cookbook",
+      "url": "https://github.com/ZQM-Computing/nuclei-cookbook"
+    },
+    {
+      "name": "misp-cookbook",
+      "url": "https://github.com/ZQM-Computing/misp-cookbook"
+    },
+    {
+      "name": "qgis-cookbook",
+      "url": "https://github.com/ZQM-Computing/qgis-cookbook"
+    },
+    {
+      "name": "timescaledb-cookbook",
+      "url": "https://github.com/ZQM-Computing/timescaledb-cookbook"
+    },
+    {
+      "name": "geonode-cookbook",
+      "url": "https://github.com/ZQM-Computing/geonode-cookbook"
+    },
+    {
+      "name": "airflow-cookbook",
+      "url": "https://github.com/ZQM-Computing/airflow-cookbook"
+    },
+    {
+      "name": "redpanda-cookbook",
+      "url": "https://github.com/ZQM-Computing/redpanda-cookbook"
+    },
+    {
+      "name": "airbyte-cookbook",
+      "url": "https://github.com/ZQM-Computing/airbyte-cookbook"
+    },
+    {
+      "name": "osrm-cookbook",
+      "url": "https://github.com/ZQM-Computing/osrm-cookbook"
+    },
+    {
+      "name": "pelias-cookbook",
+      "url": "https://github.com/ZQM-Computing/pelias-cookbook"
+    },
+    {
+      "name": "webodm-cookbook",
+      "url": "https://github.com/ZQM-Computing/webodm-cookbook"
+    },
+    {
+      "name": "meltano-cookbook",
+      "url": "https://github.com/ZQM-Computing/meltano-cookbook"
+    },
+    {
+      "name": "superset-cookbook",
+      "url": "https://github.com/ZQM-Computing/superset-cookbook"
+    },
+    {
+      "name": "streamlit-cookbook",
+      "url": "https://github.com/ZQM-Computing/streamlit-cookbook"
+    },
+    {
+      "name": "folium-cookbook",
+      "url": "https://github.com/ZQM-Computing/folium-cookbook"
+    },
+    {
+      "name": "keplergl-cookbook",
+      "url": "https://github.com/ZQM-Computing/keplergl-cookbook"
+    },
+    {
+      "name": "plotly-cookbook",
+      "url": "https://github.com/ZQM-Computing/plotly-cookbook"
+    },
+    {
+      "name": "pystac-cookbook",
+      "url": "https://github.com/ZQM-Computing/pystac-cookbook"
+    },
+    {
+      "name": "rio-cogeo-cookbook",
+      "url": "https://github.com/ZQM-Computing/rio-cogeo-cookbook"
+    },
+    {
+      "name": "metpy-cookbook",
+      "url": "https://github.com/ZQM-Computing/metpy-cookbook"
+    },
+    {
+      "name": "earthengine-cookbook",
+      "url": "https://github.com/ZQM-Computing/earthengine-cookbook"
+    },
+    {
+      "name": "pymupdf-cookbook",
+      "url": "https://github.com/ZQM-Computing/pymupdf-cookbook"
+    },
+    {
+      "name": "pdfplumber-cookbook",
+      "url": "https://github.com/ZQM-Computing/pdfplumber-cookbook"
+    },
+    {
+      "name": "mapproxy-cookbook",
+      "url": "https://github.com/ZQM-Computing/mapproxy-cookbook"
+    },
+    {
+      "name": "portainer-cookbook",
+      "url": "https://github.com/ZQM-Computing/portainer-cookbook"
+    },
+    {
+      "name": "caddy-cookbook",
+      "url": "https://github.com/ZQM-Computing/caddy-cookbook"
+    },
+    {
+      "name": "authelia-cookbook",
+      "url": "https://github.com/ZQM-Computing/authelia-cookbook"
+    },
+    {
+      "name": "uptime-kuma-cookbook",
+      "url": "https://github.com/ZQM-Computing/uptime-kuma-cookbook"
+    },
+    {
+      "name": "intelowl-cookbook",
+      "url": "https://github.com/ZQM-Computing/intelowl-cookbook"
+    },
+    {
+      "name": "datahub-cookbook",
+      "url": "https://github.com/ZQM-Computing/datahub-cookbook"
+    },
+    {
+      "name": "vaultwarden-cookbook",
+      "url": "https://github.com/ZQM-Computing/vaultwarden-cookbook"
+    },
+    {
+      "name": "snscrape-cookbook",
+      "url": "https://github.com/ZQM-Computing/snscrape-cookbook"
+    },
+    {
+      "name": "exiftool-cookbook",
+      "url": "https://github.com/ZQM-Computing/exiftool-cookbook"
+    },
+    {
+      "name": "ghunt-cookbook",
+      "url": "https://github.com/ZQM-Computing/ghunt-cookbook"
+    },
+    {
+      "name": "certstream-cookbook",
+      "url": "https://github.com/ZQM-Computing/certstream-cookbook"
+    },
+    {
+      "name": "dnsrecon-cookbook",
+      "url": "https://github.com/ZQM-Computing/dnsrecon-cookbook"
+    },
+    {
+      "name": "ipwhois-cookbook",
+      "url": "https://github.com/ZQM-Computing/ipwhois-cookbook"
+    },
+    {
+      "name": "h8mail-cookbook",
+      "url": "https://github.com/ZQM-Computing/h8mail-cookbook"
+    },
+    {
+      "name": "subfinder-cookbook",
+      "url": "https://github.com/ZQM-Computing/subfinder-cookbook"
+    },
+    {
+      "name": "sublist3r-cookbook",
+      "url": "https://github.com/ZQM-Computing/sublist3r-cookbook"
+    },
+    {
+      "name": "holehe-cookbook",
+      "url": "https://github.com/ZQM-Computing/holehe-cookbook"
+    },
+    {
+      "name": "phoneinfoga-cookbook",
+      "url": "https://github.com/ZQM-Computing/phoneinfoga-cookbook"
+    },
+    {
+      "name": "blackbird-cookbook",
+      "url": "https://github.com/ZQM-Computing/blackbird-cookbook"
+    },
+    {
+      "name": "waybackpy-cookbook",
+      "url": "https://github.com/ZQM-Computing/waybackpy-cookbook"
+    },
+    {
+      "name": "instaloader-cookbook",
+      "url": "https://github.com/ZQM-Computing/instaloader-cookbook"
+    },
+    {
+      "name": "censys-cookbook",
+      "url": "https://github.com/ZQM-Computing/censys-cookbook"
     }
   ]
 }
