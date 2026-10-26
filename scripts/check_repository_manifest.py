@@ -50,11 +50,18 @@ def validate_manifest(root: Path = ROOT) -> list[str]:
             continue
         slug = entry["slug"].strip()
         layer = entry.get("layer")
+        name = entry.get("name")
+        url = entry.get("url")
         if not isinstance(layer, str) or not layer.strip():
             issues.append(f"Manifest entry {index} must contain a non-empty layer")
         if not slug or "/" in slug or slug in {".", ".."}:
             issues.append(f"Manifest entry {index} has an invalid repository slug: {slug!r}")
             continue
+        if not isinstance(name, str) or name != slug:
+            issues.append(f"Manifest entry {index} name must match its canonical slug: {slug}")
+        expected_url = f"https://github.com/{owner}/{slug}" if isinstance(owner, str) and owner else ""
+        if not isinstance(url, str) or url != expected_url:
+            issues.append(f"Manifest entry {index} URL must be canonical for {slug}: {url!r}")
         slugs.append(slug)
 
     duplicates = sorted({slug for slug in slugs if slugs.count(slug) > 1})
