@@ -152,7 +152,6 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 | [datahub-cookbook](https://github.com/ZQM-Computing/datahub-cookbook) | A DataHub cookbook — metadata catalog and lineage over data platforms |
 | [vaultwarden-cookbook](https://github.com/ZQM-Computing/vaultwarden-cookbook) | A Vaultwarden cookbook — self-hosted password vault with clients and API |
 
-
 ### Pipelines & orchestration
 
 | Repo | What it covers |
