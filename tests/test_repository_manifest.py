@@ -25,6 +25,43 @@ class RepositoryManifestTests(unittest.TestCase):
         self.assertEqual(manifest["owner"], "ZQM-Computing")
         self.assertGreaterEqual(len(manifest["repositories"]), 10)
 
+    def test_validator_rejects_noncanonical_manifest_name_and_url(self) -> None:
+        import json
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "docs").mkdir()
+            manifest = {
+                "schema_version": 1,
+                "owner": "ZQM-Computing",
+                "repositories": [
+                    {
+                        "slug": "alpha",
+                        "name": "Alpha",
+                        "layer": "data",
+                        "url": "https://github.com/ZQM-Computing/alpha?tab=readme",
+                    }
+                ],
+            }
+            (root / "docs" / "repository-manifest.json").write_text(
+                json.dumps(manifest), encoding="utf-8"
+            )
+            (root / "README.md").write_text(
+                "| Repo | What it covers |\n| --- | --- |\n"
+                "| [alpha](https://github.com/ZQM-Computing/alpha) | example |\n",
+                encoding="utf-8",
+            )
+            issues = validate_manifest(root)
+            self.assertTrue(
+                any("name must match its canonical slug" in issue for issue in issues),
+                issues,
+            )
+            self.assertTrue(
+                any("URL must be canonical for alpha" in issue for issue in issues),
+                issues,
+            )
+
     def test_validator_rejects_duplicate_manifest_slugs(self) -> None:
         import json
         import tempfile
