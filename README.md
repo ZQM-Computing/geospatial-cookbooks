@@ -33,6 +33,14 @@ Explore the ZQM Computing geospatial cookbook series: practical GIS and spatial-
 
 Geospatial developers, GIS analysts, and data engineers who want one doorway into the whole series. Each linked repository documents its own examples and validation. This index is a subject-matter map, not proof that every repository is a production dependency or that the stack is deployed as one integrated system.
 
+## Canonical repository manifest
+
+The [repository manifest](docs/repository-manifest.json) records the canonical slugs for every repository listed in this index. It is a documentation registry only—not a dependency graph, runtime integration claim, or deployment inventory. The consistency check runs in the standard unit-test suite. Run it locally with:
+
+```sh
+python -m unittest discover -s tests -p 'test_repository_manifest.py' -v
+```
+
 ## Cookbook quality gates
 
 Use the [cookbook quality gates](docs/COOKBOOK_QUALITY_GATES.md) to assess reproducibility, behavioral correctness, runtime validation, integration evidence, and operational safety consistently across the series. The rubric distinguishes confirmed defects from work that has not yet been verified; it does not imply that every repository has passed.
@@ -143,7 +151,6 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 | [uptime-kuma-cookbook](https://github.com/ZQM-Computing/uptime-kuma-cookbook) | A Uptime Kuma cookbook — uptime monitoring with status pages and notifications |
 | [datahub-cookbook](https://github.com/ZQM-Computing/datahub-cookbook) | A DataHub cookbook — metadata catalog and lineage over data platforms |
 | [vaultwarden-cookbook](https://github.com/ZQM-Computing/vaultwarden-cookbook) | A Vaultwarden cookbook — self-hosted password vault with clients and API |
-
 
 ### Pipelines & orchestration
 
