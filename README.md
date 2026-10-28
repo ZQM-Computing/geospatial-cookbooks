@@ -78,7 +78,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Data & analysis
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [postgis-cookbook](https://github.com/ZQM-Computing/postgis-cookbook) | PostGIS cookbook: spatial indexing, joins & KNN, SRID management, vector tiles, data quality, partitioning |
 | [duckdb-spatial-cookbook](https://github.com/ZQM-Computing/duckdb-spatial-cookbook) | DuckDB Spatial cookbook for analytical geospatial SQL: GeoParquet, spatial joins, KNN, H3 aggregation — no server required |
 | [geopandas-cookbook](https://github.com/ZQM-Computing/geopandas-cookbook) | GeoPandas/Shapely cookbook for Python geospatial workflows: spatial joins, CRS handling, overlays, interpolation, performance |
@@ -99,7 +99,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Formats & conversion
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [gdal-cookbook](https://github.com/ZQM-Computing/gdal-cookbook) | GDAL/OGR command-line cookbook: runnable examples for conversion, reprojection, clipping, and mosaicking |
 | [cog-cookbook](https://github.com/ZQM-Computing/cog-cookbook) | Cloud Optimized GeoTIFF cookbook: creation, validation, TiTiler serving, xarray integration, performance benchmarking |
 | [geoparquet-cookbook](https://github.com/ZQM-Computing/geoparquet-cookbook) | GeoParquet cookbook for columnar geospatial analytics: partitioning, predicate pushdown, DuckDB/Spark integration |
@@ -111,7 +111,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Discovery & serving
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [stac-cookbook](https://github.com/ZQM-Computing/stac-cookbook) | STAC cookbook for geospatial data discovery: catalogs, item validation, search API, bulk operations, cloud deployment |
 | [geospatial-api-reference](https://github.com/ZQM-Computing/geospatial-api-reference) | OGC API – Features reference implementation with FastAPI and PostGIS backends |
 | [maplibre-cookbook](https://github.com/ZQM-Computing/maplibre-cookbook) | MapLibre GL JS cookbook for frontend vector tile rendering: custom layers, 3D terrain, performance tuning, interactive maps |
@@ -131,7 +131,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Desktop & field
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [qgis-resources](https://github.com/ZQM-Computing/qgis-resources) | QGIS expressions, PyQGIS snippets, Processing scripts, styles, and QField field-collection guides |
 | [qgis-cookbook](https://github.com/ZQM-Computing/qgis-cookbook) | A QGIS cookbook — PyQGIS automation, processing scripts, and plugin patterns |
 | [webodm-cookbook](https://github.com/ZQM-Computing/webodm-cookbook) | A WebODM cookbook — drone imagery processing into maps and models |
@@ -139,7 +139,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Infrastructure & operations
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [proxmox-ceph-operations](https://github.com/ZQM-Computing/proxmox-ceph-operations) | Proxmox VE + Ceph operations runbooks: health checks, backup discipline, OSD replacement, upgrade checklists |
 | [ollama-fleet-cookbook](https://github.com/ZQM-Computing/ollama-fleet-cookbook) | Ollama fleet operations cookbook: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG |
 | [minio-cookbook](https://github.com/ZQM-Computing/minio-cookbook) | A MinIO cookbook for S3-compatible object storage from a source build |
@@ -157,7 +157,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Pipelines & orchestration
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [prefect-cookbook](https://github.com/ZQM-Computing/prefect-cookbook) | A Prefect cookbook for workflow orchestration, schedules, and deployments |
 | [nifi-cookbook](https://github.com/ZQM-Computing/nifi-cookbook) | A NiFi cookbook for visual dataflow, ingestion, and feed-to-PostGIS pipelines |
 | [dlt-cookbook](https://github.com/ZQM-Computing/dlt-cookbook) | A dlt cookbook for ELT pipelines from Python into Postgres and DuckDB |
@@ -170,7 +170,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Visualization & apps
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [superset-cookbook](https://github.com/ZQM-Computing/superset-cookbook) | A Superset cookbook — dashboards and SQL exploration over geospatial tables |
 | [streamlit-cookbook](https://github.com/ZQM-Computing/streamlit-cookbook) | A Streamlit cookbook — Python data apps for geospatial exploration |
 | [folium-cookbook](https://github.com/ZQM-Computing/folium-cookbook) | A folium cookbook — interactive Leaflet maps from Python |
@@ -180,7 +180,7 @@ Desktop (QGIS) → Conversion (GDAL) → Python (GeoPandas) → System of Record
 ### Intelligence & OSINT
 
 | Repo | What it covers |
-|------|----------------|
+| --- | --- |
 | [scrapy-cookbook](https://github.com/ZQM-Computing/scrapy-cookbook) | A Scrapy cookbook for polite web scraping spiders, pipelines, and exports |
 | [theharvester-cookbook](https://github.com/ZQM-Computing/theharvester-cookbook) | A theHarvester cookbook for passive reconnaissance from public sources |
 | [spiderfoot-cookbook](https://github.com/ZQM-Computing/spiderfoot-cookbook) | A SpiderFoot cookbook for passive OSINT automation as a service |
