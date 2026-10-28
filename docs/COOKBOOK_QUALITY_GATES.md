@@ -7,7 +7,7 @@ Use this checklist to distinguish a useful, reproducible cookbook from a directo
 ## Evidence levels
 
 | Level | Meaning | Minimum evidence |
-|---|---|---|
+| --- | --- | --- |
 | 0 — Discoverable | Users can identify the tool's purpose and limitations. | Accurate README, prerequisites, license, support status, links. |
 | 1 — Reproducible | A new user can run at least one meaningful example. | Clean-checkout quickstart, pinned or bounded dependencies, synthetic/sample inputs, expected output. |
 | 2 — Behavior-tested | Tests assert outcomes rather than implementation markers. | Deterministic fixtures; assertions for values, schemas, geometry/CRS, errors, and output safety as relevant. |
