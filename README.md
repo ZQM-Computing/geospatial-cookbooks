@@ -17,6 +17,14 @@ Explore the ZQM Computing geospatial cookbook series: practical GIS and spatial-
 
 For the **individual cookbook descriptions and inclusion rationales across the wider ZQM Computing portfolio**, see the [annotated cookbook directory](https://github.com/ZQM-Computing/ZQM-Computing/blob/main/COOKBOOKS.md). It explains what each of the 91 cookbook-named repositories is intended to cover and why it belongs in the collection. These are topic-level rationales, not proof of implementation completeness, CI health, or production readiness; check each repository's own README and current checks.
 
+## For engineering and environmental teams
+
+For engineering and environmental teams evaluating paid workflow improvements,
+start with the [buyer guide](docs/workflow-services.md). It maps business needs
+to verified synthetic demonstrations and supporting references, defines the
+proposed GIS Workflow Diagnostic and follow-on services, and distinguishes
+confirmed test evidence from unverified customer or deployment claims.
+
 ## Related application: ZQM Observatory
 
 [zqm-observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application that may reuse patterns documented by this cookbook series. It is not part of the cookbook index manifest, and the link does not assert runtime dependencies or end-to-end integration. See its [geospatial repository integration map](https://github.com/ZQM-Computing/zqm-observatory/blob/main/docs/geospatial-repository-integration.md) for proposed handoffs and the evidence required before calling them verified.
