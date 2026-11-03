@@ -21,8 +21,9 @@ For the **individual cookbook descriptions and inclusion rationales across the w
 
 For engineering and environmental teams evaluating paid workflow improvements,
 start with the [buyer guide](docs/workflow-services.md). It maps business needs
-to relevant technical examples, defines the proposed GIS Workflow Diagnostic,
-and distinguishes runnable demonstrations from work still under review.
+to verified synthetic demonstrations and supporting references, defines the
+proposed GIS Workflow Diagnostic and follow-on services, and distinguishes
+confirmed test evidence from unverified customer or deployment claims.
 
 ## Related application: ZQM Observatory
 
