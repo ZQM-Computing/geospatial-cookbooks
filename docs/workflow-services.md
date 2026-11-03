@@ -38,26 +38,47 @@ Production implementation, new licenses, full dataset cleanup, fieldwork, and
 ongoing support are separate. The diagnostic does not include a certified survey,
 engineering opinion, environmental site assessment, or regulatory determination.
 
-Contact [ZQM Computing](mailto:zqmcomputing@gmail.com) with the recurring task,
-tools, frequency, desired output, and approximate deadline. Do not send
-credentials or confidential data through public GitHub issues. Commercial
-terms and authorized data access are agreed before work begins.
+Request a 20-minute fit call with [ZQM Computing](mailto:alexzelenski@outlook.com)
+about the recurring task, tools, frequency, desired output, and approximate
+deadline. Do not send credentials or confidential datasets through ordinary
+email or public GitHub issues. Contracting identity, commercial terms and
+secure authorized data access must be agreed before delivery.
 
-## Demonstration under review
+## Verified synthetic demonstration and supporting references
 
-[GeoPandas PR #39](https://github.com/ZQM-Computing/geopandas-cookbook/pull/39)
-adds a synthetic input-to-QA-report demonstration. At preparation, it is proposed
-work, not a merged release. Use the PR to inspect its current status and checks.
+The [GeoPandas workflow diagnostic demonstration](https://github.com/ZQM-Computing/geopandas-cookbook/blob/main/docs/workflow-diagnostic.md)
+was merged in [PR #39](https://github.com/ZQM-Computing/geopandas-cookbook/pull/39)
+(commit `45f2ac45d71d6c478be862f455630757c911bace`).
+The sample reconciles eight incoming records into two accepted and six
+reason-coded rejects. It covers explicit CRS handling, boundary inclusion,
+duplicate IDs, repeatability and last-good-output preservation. All eight
+GitHub Actions workflows passed on the reviewed PR head before merge. This
+proves the synthetic demo contract in that environment, **not** a client
+case study, production throughput guarantee, or measured labor savings.
 
-The submitted revision `f5e2393444224715e774f0954d13264a67ca0830` passed 21 local
-tests, the documentation checker, and a command-line smoke run. The fixture
-reconciles eight rows into two accepted and six rejected. Tests cover invalid
-batches, boundary inclusion, duplicate IDs, coordinate transformation,
-repeatability, failed publication and input overwrite protection.
+The [QGIS dataset QA guide](https://github.com/ZQM-Computing/qgis-resources/blob/main/docs/DATASET_QA.md)
+explains read-only vector/raster inspection and report output. The
+[October 31, 2026 runtime baseline](https://github.com/ZQM-Computing/qgis-resources/actions/runs/41242191186)
+passed with QGIS 3.40.15 on a Linux runner; subsequent
+[report-publication safeguards](https://github.com/ZQM-Computing/qgis-resources/pull/36)
+also passed their own exact-head QGIS suite and were merged. Do not infer
+Windows or production compatibility from these synthetic tests.
 
-The bundle includes the source hash, software versions, CRS and rejection reasons.
-It is a local single-writer demonstration using synthetic data. No client savings,
-production throughput, multi-user operation or regulatory suitability is asserted.
+The [PostGIS migration discovery template](https://github.com/ZQM-Computing/postgis-cookbook/blob/main/docs/migration-discovery.md)
+provides an inventory, reconciliation, risk and acceptance checklist for
+scoping spatial-database changes. Its documentation and SQL examples are
+not evidence that a particular client's migration was performed.
+
+## Follow-on professional services
+
+| Offer | Proposed commercial model | Scope boundary |
+| --- | --- | --- |
+| One-workflow implementation | $5,000–$12,000 test range | Agreed workflow, validation, documentation and handoff; discovery first |
+| Fractional geospatial lead | $3,500/month for up to 20 hours | Scheduled technical leadership on a named backlog; no unlimited availability |
+| Migration discovery | $2,000–$4,000 test range | Source/target inventory, reconciliation, risks, acceptance criteria; migration separate |
+
+All prices are proposed market tests, subject to confirmed scope and agreement.
+Open-source use never requires purchasing services.
 
 ## From diagnostic to implementation
 
