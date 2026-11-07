@@ -25,16 +25,22 @@ External links are discovery starting points, **not live-verified downloads or g
 
 <!-- coderabbit-ai-generated-section:v1:a52651db042185aba4a949c68448523e96f0202b8da56211ad4ac1aef2e57bc3 -->
 
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:43dcbaac7a6987e46cdf08accfe7cfc643e4047a7ff7ae864f2e4b98b4a52a2a -->
+
 ## Repeatable preliminary screening workflow
 
 1. **Define the decision:** parcel/site identifier, jurisdiction, proposed use, alternatives, study area, and agreed screening radius. Avoid treating parcel polygons as surveyed boundaries.
 2. **Capture provenance:** dataset owner, title, URL, retrieval time (UTC), published/effective date, license, CRS, resolution/scale, update frequency, and known limitations.
 3. **Normalize spatial data:** validate geometries, coordinate reference systems, linear units, nulls, duplicates, and topology. Preserve untouched originals.
-4. **Screen independently:** intersect candidate footprints with flood zones, wetlands inventory, hydric-soil indicators, protected areas, impaired waters, land cover, and applicable local planning overlays. Query USFWS IPaC for species results and EPA ECHO for facility records, and record the query dates. Do not infer absence from missing features or unavailable layers.
-5. **Quantify uncertainty:** dissolve or union overlapping polygon features within each topic before summing intersected area to avoid double counting; report intersected area and percentage with explicit units; separate measured GIS overlap from regulatory setbacks or required buffers; distinguish no intersection, no coverage, and processing failure.
+4. **Screen independently:** intersect candidate footprints with flood zones, wetlands inventory, hydric-soil indicators, protected areas, impaired waters, land cover, and applicable local planning overlays. Query USFWS IPaC for species results and EPA ECHO for facility records, including inactive facilities; ECHO Quick Search by location excludes them by default. Configure the ECHO spatial search to cover the entire candidate footprint plus the agreed screening radius, using broader or multiple queries as needed and filtering results to the agreed study area. Record query dates, status filters, and spatial search settings. Do not infer absence from missing features or unavailable layers.
+5. **Quantify uncertainty:** dissolve or union overlapping polygon features within each topic (and separately within each flood-zone class) before summing intersected area to avoid double counting; report intersected area and percentage with explicit units, reporting Special Flood Hazard Area (SFHA) area and percentage separately from other mapped flood zones; separate measured GIS overlap from regulatory setbacks or required buffers; distinguish no intersection, no coverage, and processing failure.
 6. **Compare alternatives:** document assumptions, constraints, source confidence, and trade-offs. Avoid an unexplained composite suitability score.
 7. **Quality assurance:** verify boundary/CRS assumptions, spot-check geometry and imagery, reconcile feature counts and area totals, and have a reviewer inspect the map and limitations.
 8. **Deliver:** an executive screening summary, source register, constraint matrix, reproducible outputs, map with legend/scale/CRS/date, and an escalation list for qualified local specialists.
+
+<!-- /coderabbit-ai-generated:v1 -->
 
 <!-- /coderabbit-ai-generated:v1 -->
 
