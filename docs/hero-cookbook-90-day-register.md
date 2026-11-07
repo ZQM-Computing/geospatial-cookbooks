@@ -51,8 +51,6 @@ and recalculate each candidate's density and composite score. Keep the
 current six-hero list a **planning proposal**, not an evidence-certified
 selection, until the inventory and both review threads are reconciled.
 
-
-
 | Hero | Reconciled score & evidence (2026-11-06) | Next proof to publish | Release gate |
 | --- | --- | --- | --- |
 | [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook) | **13.00/14 (provisional)** — the reference baseline: 14 units, 24 artifacts, 12 test files, CI, Quickstart; existing synthetic land-change demonstration and offline GIS reasoning scorer | Parcel/environmental-screening walkthrough with known geometry, projected units and reproducible output | Golden numeric invariants, CRS and provenance tests, example output alt text |
