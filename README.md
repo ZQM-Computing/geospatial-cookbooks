@@ -29,6 +29,10 @@ confirmed test evidence from unverified customer or deployment claims.
 
 The [content experiment register](docs/shareable-content-experiments.md) connects reproducible GIS examples to short-form explainers, comparison maps, #30DayMapChallenge prompts, and AI-versus-GIS verification. It distinguishes implemented examples from research ideas, enforces data-rights and scientific accuracy checks, and keeps ZQM Labs game concepts separate from ZQM Computing services.
 
+## Environmental planning resources
+
+The [environmental planning GIS guide](docs/environmental-planning-resources.md) provides authoritative US/Florida data starting points, a reproducible preliminary screening workflow, an uncertainty-aware constraint matrix, and a map from planning tasks to the existing cookbooks. It explicitly separates desktop GIS screening from regulatory determinations and licensed professional services.
+
 ## Related application: ZQM Observatory
 
 [zqm-observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application that may reuse patterns documented by this cookbook series. It is not part of the cookbook index manifest, and the link does not assert runtime dependencies or end-to-end integration. See its [geospatial repository integration map](https://github.com/ZQM-Computing/zqm-observatory/blob/main/docs/geospatial-repository-integration.md) for proposed handoffs and the evidence required before calling them verified.
