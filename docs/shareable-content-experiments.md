@@ -7,6 +7,11 @@ Owner: **ZQM Computing**. Audience: geospatial developers, environmental
 planners and GIS decision makers. ZQM Labs owns games and player engagement
 under its distinct brand; this index must not change Labs game release status.
 
+For newly verified GeoAI benchmarks, photo-geolocation privacy risks,
+GeoPolars readiness, measured format stories and low-friction game formats,
+see the [November 2026 evidence and opportunity register](geoai-and-play-trends-2026-11.md).
+Do not treat source existence or popularity anecdotes as ZQM user demand.
+
 ## Formats and repository ownership
 
 | Priority | Public-facing format | Correct home | Evidence state |
