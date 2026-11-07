@@ -17,10 +17,11 @@ Concentrate improvements in **six hero technical cookbooks**, plus
 remains navigable and maintained, but is not the near-term content-production
 priority. The three phases below are commitments for review, not releases.
 
-The selection is a **provisional weighted evidence ranking**, proposed 2026-11-06
-(see "Reconciliation" below): composite /14 = Density (vs GeoPandas
-14 units / 24 artifacts) + README quality (§7: problem, quickstart, visual
-proof, related links) + Completeness (tests, CI, README depth, size).
+The selection is a **six-hero planning proposal**, not a validated weighted ranking.
+The historical composite /14 model relied on a GeoPandas density baseline of
+14 units / 24 artifacts that the pinned-tree audit does not support. All
+historical numerical scores and ordering comparisons are withdrawn pending
+consistent inventories across the whole candidate set.
 Pattern files under `patterns/` count toward units at half weight (0.5 each).
 This is an evidence ranking, **not a GitHub-traffic-driven ranking** and not
 a prioritization judgment: where the ranking and the prior list disagreed,
@@ -28,56 +29,55 @@ the ranking decided (Alex, 2026-11-06).
 
 ### Six proposed ZQM Computing heroes (2026-11-06)
 
-**Inventory reconciliation pending (merge gate).** The numeric scores below
-are historical proposal inputs, not a newly independently verified census.
-Two source-review findings remain open:
+**Pinned source-tree inventory verified in CI; composite ranking still pending.**
+The audit script `scripts/hero_tree_inventory.py` fetches complete recursive
+trees at immutable commits, emits counted paths and fails on truncated trees.
+The current comparison fixes two previously disputed source counts:
 
-- **GeoPandas:** The report's 14 weighted-unit baseline and 24-artifact
-  denominator lack a documented, non-overlapping classification of numbered
-  example directories, split example 12, and the referenced demos. The
-  inspected tree contains 13 example directories and a separate
-  `demos/workflow_qa.py` script; the claimed three counted demos have not
-  been independently mapped to exact file paths.
-- **MapLibre:** The inspected tree contains ten notebook files, ten HTML
-  files, and one SQL pattern. The table's 10.5 weighted units may be
-  defensible under a unique-example-directory rule, but its 12-artifact
-  assertion has no independently reproducible definition.
+- **GeoPandas:** At `7f897781fe9e8f019817df3e45ab2ec409fa079b`,
+  13 unique `examples/*` directories contain 20 Python source files;
+  `demos/workflow_qa.py` is the **one** separate demo. Under the explicit
+  rule, that is 13 units and 20 source artifacts excluding demos, **not**
+  the historical 14 units / 24 artifacts.
+- **MapLibre:** At `19e159f7715891e1d42ad9e1c1812480ce8a81da`,
+  10 `examples/*` directories each have HTML and notebook sources (20 files),
+  plus `patterns/01_vector_tiles.sql`. Counting each example directory once
+  and the pattern at half weight yields **10.5 units / 21 source artifacts**,
+  not the historical 12 artifacts.
 
-**Source-reconciliation snapshot (not a validated denominator):**
+**Reproducible pinned-tree result (exact-source-path inventory in CI logs):**
 
-| Repository and pinned source | README's enumerated examples | Separate reviewed tree observation | Unresolved counting question |
+| Repository and pinned source | Example directories | Example source files | Pattern files | Separate demos | Weighted units | Source artifacts excluding demos |
 | --- | --- | --- | --- |
-| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook/tree/c15f63ff7e708f8b0023e97804c1a8896f5d4b49) | Patterns 01–12 listed as twelve tutorial entries | Previous review of tree `7f897781fe9e8f019817df3e45ab2ec409fa079b` found thirteen example directories and `demos/workflow_qa.py` | Whether split 12, three named demos, and artifacts are distinct or overlapping units |
-| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook/tree/19e159f7715891e1d42ad9e1c1812480ce8a81da) | Patterns 01–06 listed as six HTML tutorials | Previous review of the same pinned tree found ten notebook files, ten HTML files, and one SQL pattern | Whether one multi-format example is one unit, which files count as artifacts, and whether README is stale |
+| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook/tree/7f897781fe9e8f019817df3e45ab2ec409fa079b) | 13 | 20 | 0 | 1 | 13.0 | 20 |
+| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook/tree/19e159f7715891e1d42ad9e1c1812480ce8a81da) | 10 | 20 | 1 | 0 | 10.5 | 21 |
 
-The README listings are direct documentary evidence, not a complete recursive
-tree manifest. The tree observations above are attributed to the recorded
-review rather than reproduced by this register. **Neither is sufficient to
-certify the 14-unit/24-artifact baseline or the 10.5-unit/12-artifact claim.**
-Do not update rankings from these partial counts alone.
+The counting rule is: **one unit per unique `examples/*` directory**
+containing a `.py`, `.html`, `.ipynb` or `.sql` file; **half a unit per
+source file under `patterns/`**; standalone `demos/` files are reported
+separately and do not silently contribute units. Source-artifact count is
+the number of those example and pattern files (not README files, screenshots,
+CI files, or tests). This is a defined source-density measure, not a runtime
+quality assessment. The complete path lists and pinned SHAs are printed by the
+CI audit and validated for complete trees.
 
-Before approving the weighted ranking, freeze each source repository's
-commit SHA, publish a machine-readable per-path classification
-(`example_unit`, `pattern_half_unit`, `demo`, `artifact`, or
-`excluded`), specify whether multiple formats in one example count once,
-and recalculate each candidate's density and composite score. Keep the
-current six-hero list a **planning proposal**, not an evidence-certified
-selection, until the inventory and both review threads are reconciled.
+Before approving a weighted ranking, apply the same executable rule to
+**all** selected heroes and alternates and recalculate density, README and
+completeness scores. Until then the six-hero list remains a planning proposal
+and the historical /14 scores do not constitute a defensible ranking.
 
-| Hero | Reconciled score & evidence (2026-11-06) | Next proof to publish | Release gate |
+| Hero | Source evidence and historical proposal context | Next proof to publish | Release gate |
 | --- | --- | --- | --- |
-| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook) | **13.00/14 (provisional)** — the reference baseline: 14 units, 24 artifacts, 12 test files, CI, Quickstart; existing synthetic land-change demonstration and offline GIS reasoning scorer | Parcel/environmental-screening walkthrough with known geometry, projected units and reproducible output | Golden numeric invariants, CRS and provenance tests, example output alt text |
-| [PostGIS](https://github.com/ZQM-Computing/postgis-cookbook) | **11.78/14** — 9.5 weighted units (6 example dirs + 7 pattern files at half weight), 20 artifacts (2nd on the account), longest hero README (16.2 KB); pattern guide + production runbook | Distribution-aware spatial-index benchmark with reproducible numbers | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
-| [STAC](https://github.com/ZQM-Computing/stac-cookbook) | **11.78/14** — 13 units, 14 artifacts, largest cookbook (506 KB); head of the STAC→COG→TiTiler vertical | A complete **offline** STAC item-to-COG inspection example with asset-resolution and rights checks | Schema validation, deterministic fixture, broken-href failure, no token or live-cloud dependency |
-| [GDAL](https://github.com/ZQM-Computing/gdal-cookbook) | **11.53/14** — 11 weighted units (8 example dirs + 6 pattern files at half weight), 15 artifacts spanning CLI, Python and COG creation; foundation library of the whole stack | COG-creation walkthrough cross-linked to the COG cookbook (not duplicated there) | GDAL version and output check, license/asset provenance, no unverified cloud performance claim |
-| [pgRouting](https://github.com/ZQM-Computing/pgrouting-cookbook) | **11.50/14** — 12 example units (2nd-most), one runnable `run.sql` per dir, purely SQL end-to-end | Isochrone + service-area walkthrough with known geometry | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
-| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook) | **11.12/14 (provisional)** — 10.5 weighted units (10 notebook dirs + 1 pattern file at half weight), 12 artifacts including 10 notebooks (the estate's only notebooks); voted in as 6th hero | First rendered visual proof: an interactive map output committed to the README | Screenshot/diagram with alt text, expected sample output, no fabricated timing claims |
+| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook) | **Score withdrawn** — pinned source tree: 13 example units, 20 source artifacts excluding one separate demo; 12 test files, CI, Quickstart; existing synthetic land-change demonstration and offline GIS reasoning scorer | Parcel/environmental-screening walkthrough with known geometry, projected units and reproducible output | Golden numeric invariants, CRS and provenance tests, example output alt text |
+| [PostGIS](https://github.com/ZQM-Computing/postgis-cookbook) | **Legacy score 11.78/14 (unverified)** — 9.5 weighted units (6 example dirs + 7 pattern files at half weight), 20 artifacts (2nd on the account), longest hero README (16.2 KB); pattern guide + production runbook | Distribution-aware spatial-index benchmark with reproducible numbers | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
+| [STAC](https://github.com/ZQM-Computing/stac-cookbook) | **Legacy score 11.78/14 (unverified)** — 13 units, 14 artifacts, largest cookbook (506 KB); head of the STAC→COG→TiTiler vertical | A complete **offline** STAC item-to-COG inspection example with asset-resolution and rights checks | Schema validation, deterministic fixture, broken-href failure, no token or live-cloud dependency |
+| [GDAL](https://github.com/ZQM-Computing/gdal-cookbook) | **Legacy score 11.53/14 (unverified)** — 11 weighted units (8 example dirs + 6 pattern files at half weight), 15 artifacts spanning CLI, Python and COG creation; foundation library of the whole stack | COG-creation walkthrough cross-linked to the COG cookbook (not duplicated there) | GDAL version and output check, license/asset provenance, no unverified cloud performance claim |
+| [pgRouting](https://github.com/ZQM-Computing/pgrouting-cookbook) | **Legacy score 11.50/14 (unverified)** — 12 example units (2nd-most), one runnable `run.sql` per dir, purely SQL end-to-end | Isochrone + service-area walkthrough with known geometry | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
+| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook) | **Score withdrawn** — verified 10.5 weighted units (10 example dirs with both HTML and notebooks + 1 pattern file at half weight), 21 counted source artifacts; voted in as 6th hero | First rendered visual proof: an interactive map output committed to the README | Screenshot/diagram with alt text, expected sample output, no fabricated timing claims |
 
-**Named alternates, in order:** GeoParquet (11.24), COG (10.96) / H3 (10.96,
-tied), DuckDB Spatial (10.81). All three of the prior list's picks that missed
-the cut lose on the approved tiebreak (highest-scored yeses take the slots),
-not on a judgment call: GeoParquet misses the top 5 by 0.26, DuckDB by 0.69
-despite rising from 10.1 to 10.8 under the patterns rule.
+**Historical alternate proposal (not validated):** GeoParquet, COG, H3,
+and DuckDB Spatial. The legacy numerical scores and associated slot margins
+must not be used to justify exclusions until every candidate is recounted.
 
 ### Reconciliation (decided by Alex, 2026-11-06)
 
@@ -88,7 +88,7 @@ MapLibre joins as a 6th hero by direct vote; the density bar is ≥12 weighted
 units **and** ≥15 artifacts; the register is the single record of the
 reconciled list.
 
-**Proposed method (pending source-to-count reconciliation).** Composite /14 = Density D (0–5, vs GeoPandas 14 units /
+**Legacy, invalidated method (do not use for current ranking).** Composite /14 = Density D (0–5, vs GeoPandas 14 units /
 24 artifacts: D = ((units÷14) + (artifacts÷24)) ÷ 2 × 5), README §7 (0–4),
 and Completeness C (0–5). **Patterns rule:** files under `patterns/` count
 toward units at half weight (0.5 each) — a pattern is a reusable snippet,
@@ -106,15 +106,16 @@ can be argued on the merits. Full counting was rejected because it equates
 snippets with full tutorials.
 
 **Density bar.** Heroes are to reach **≥12 weighted units AND ≥15 artifacts**.
-Only GeoPandas meets both today; STAC (units only), PostGIS (artifacts
-only), GDAL (artifacts only, units 1 short), pgRouting (units only) and
-MapLibre (neither) are near-GeoPandas on at least one axis. Bringing each
+Under the source-file rule, GeoPandas meets both thresholds and MapLibre
+meets the artifact threshold (21) but not the unit threshold (10.5).
+Other comparisons in the historical register await the same pinned audit. Bringing each
 hero to both thresholds is Phase 1 density work, not a re-selection trigger.
 The brief's 8–15 runnable-examples band is superseded by this bar for hero
 purposes.
 
 **Corrections to the prior register.** GeoPandas has **twelve** numbered
-example slots (01–12; #12 split in two, i.e. 13 example dirs + 3 demos),
+example slots (01–12; #12 split in two, i.e. 13 example dirs plus one
+separately counted `demos/workflow_qa.py` source),
 not "thirteen numbered example folders". DuckDB has **eight** documented SQL
 patterns (`patterns/01–08`), not seven.
 
