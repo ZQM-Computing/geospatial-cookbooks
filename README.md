@@ -17,6 +17,10 @@ Explore the ZQM Computing geospatial cookbook series: practical GIS and spatial-
 
 For the **individual cookbook descriptions and inclusion rationales across the wider ZQM Computing portfolio**, see the [annotated cookbook directory](https://github.com/ZQM-Computing/ZQM-Computing/blob/main/COOKBOOKS.md). It explains what each of the 91 cookbook-named repositories is intended to cover and why it belongs in the collection. These are topic-level rationales, not proof of implementation completeness, CI health, or production readiness; check each repository's own README and current checks.
 
+## Five answer-first GIS quickstarts
+
+Start with the [five hero cookbook evidence quickstarts](docs/five-hero-evidence-quickstarts.md): **DuckDB missing-coverage screening**, **COG source-integrity QA**, **measured GeoParquet/GeoJSON comparisons**, **STAC asset integrity**, and **offline GeoPandas spatial reasoning checks**. Each link leads to an actual example with a reproducible command and an explicit explanation of what its synthetic result cannot prove. This is a curated technical discovery path, not a verified customer case study or a claim of benchmark superiority.
+
 ## Five hero cookbooks: 90-day evidence plan
 
 The [hero and Labs documentation execution register](docs/hero-cookbook-90-day-register.md) prioritizes **GeoPandas, STAC, DuckDB Spatial, GeoParquet and COG**, plus three distinct ZQM Labs learning/hosting surfaces. It includes source-directory inventory, runnable-example correctness gates, query-shaped documentation criteria, a staged 90-day plan, and truth requirements before a coordinated launch. The inventory is **not** a claim of measured referral traffic, passed latest-commit execution for every example, completed events or new revenue. Other cookbooks remain indexed without a superficial 90-repo launch push.
