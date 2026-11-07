@@ -36,11 +36,12 @@ class HeroTreeInventoryTests(unittest.TestCase):
             {"path": "examples/01-map/index.html", "type": "blob"},
             {"path": "examples/01-map/index.html", "type": "blob"},
         ]
-        r = audit.inventory(rows)
-        self.assertEqual(r["example_directory_count"], 1)
-        # Git cannot normally contain duplicate paths; verify the function
-        # does not silently claim an authoritative count from malformed input.
-        self.assertEqual(r["example_source_file_count"], 2)
+        # Duplicate tree paths violate the evidence contract and fail closed.
+        with self.assertRaisesRegex(ValueError, "Duplicate"):
+            audit.inventory(rows)
+        valid = audit.inventory(rows[:-1])
+        self.assertEqual(valid["example_directory_count"], 1)
+        self.assertEqual(valid["example_source_file_count"], 1)
 
     def test_demo_does_not_silently_become_tutorial_unit(self):
         r = audit.inventory([{"path": "demos/one.py", "type": "blob"}])
