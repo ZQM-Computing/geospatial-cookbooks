@@ -17,7 +17,7 @@ Concentrate improvements in **six hero technical cookbooks**, plus
 remains navigable and maintained, but is not the near-term content-production
 priority. The three phases below are commitments for review, not releases.
 
-The selection is a **weighted evidence ranking**, reconciled 2026-11-06
+The selection is a **provisional weighted evidence ranking**, proposed 2026-11-06
 (see "Reconciliation" below): composite /14 = Density (vs GeoPandas
 14 units / 24 artifacts) + README quality (§7: problem, quickstart, visual
 proof, related links) + Completeness (tests, CI, README depth, size).
@@ -26,16 +26,41 @@ This is an evidence ranking, **not a GitHub-traffic-driven ranking** and not
 a prioritization judgment: where the ranking and the prior list disagreed,
 the ranking decided (Alex, 2026-11-06).
 
-### Six reconciled ZQM Computing heroes (2026-11-06)
+### Six proposed ZQM Computing heroes (2026-11-06)
+
+**Inventory reconciliation pending (merge gate).** The numeric scores below
+are historical proposal inputs, not a newly independently verified census.
+Two source-review findings remain open:
+
+- **GeoPandas:** The report's 14 weighted-unit baseline and 24-artifact
+  denominator lack a documented, non-overlapping classification of numbered
+  example directories, split example 12, and the referenced demos. The
+  inspected tree contains 13 example directories and a separate
+  `demos/workflow_qa.py` script; the claimed three counted demos have not
+  been independently mapped to exact file paths.
+- **MapLibre:** The inspected tree contains ten notebook files, ten HTML
+  files, and one SQL pattern. The table's 10.5 weighted units may be
+  defensible under a unique-example-directory rule, but its 12-artifact
+  assertion has no independently reproducible definition.
+
+Before approving the weighted ranking, freeze each source repository's
+commit SHA, publish a machine-readable per-path classification
+(`example_unit`, `pattern_half_unit`, `demo`, `artifact`, or
+`excluded`), specify whether multiple formats in one example count once,
+and recalculate each candidate's density and composite score. Keep the
+current six-hero list a **planning proposal**, not an evidence-certified
+selection, until the inventory and both review threads are reconciled.
+
+
 
 | Hero | Reconciled score & evidence (2026-11-06) | Next proof to publish | Release gate |
 | --- | --- | --- | --- |
-| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook) | **13.00/14** — the standard itself: 14 units, 24 artifacts, 12 test files, CI, Quickstart; existing synthetic land-change demonstration and offline GIS reasoning scorer | Parcel/environmental-screening walkthrough with known geometry, projected units and reproducible output | Golden numeric invariants, CRS and provenance tests, example output alt text |
+| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook) | **13.00/14 (provisional)** — the reference baseline: 14 units, 24 artifacts, 12 test files, CI, Quickstart; existing synthetic land-change demonstration and offline GIS reasoning scorer | Parcel/environmental-screening walkthrough with known geometry, projected units and reproducible output | Golden numeric invariants, CRS and provenance tests, example output alt text |
 | [PostGIS](https://github.com/ZQM-Computing/postgis-cookbook) | **11.78/14** — 9.5 weighted units (6 example dirs + 7 pattern files at half weight), 20 artifacts (2nd on the account), longest hero README (16.2 KB); pattern guide + production runbook | Distribution-aware spatial-index benchmark with reproducible numbers | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
 | [STAC](https://github.com/ZQM-Computing/stac-cookbook) | **11.78/14** — 13 units, 14 artifacts, largest cookbook (506 KB); head of the STAC→COG→TiTiler vertical | A complete **offline** STAC item-to-COG inspection example with asset-resolution and rights checks | Schema validation, deterministic fixture, broken-href failure, no token or live-cloud dependency |
 | [GDAL](https://github.com/ZQM-Computing/gdal-cookbook) | **11.53/14** — 11 weighted units (8 example dirs + 6 pattern files at half weight), 15 artifacts spanning CLI, Python and COG creation; foundation library of the whole stack | COG-creation walkthrough cross-linked to the COG cookbook (not duplicated there) | GDAL version and output check, license/asset provenance, no unverified cloud performance claim |
 | [pgRouting](https://github.com/ZQM-Computing/pgrouting-cookbook) | **11.50/14** — 12 example units (2nd-most), one runnable `run.sql` per dir, purely SQL end-to-end | Isochrone + service-area walkthrough with known geometry | Exact SQL check assertions, no implicit metric/degree conversion, cold-start caveats |
-| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook) | **11.12/14** — 10.5 weighted units (10 notebook dirs + 1 pattern file at half weight), 12 artifacts including 10 notebooks (the estate's only notebooks); voted in as 6th hero | First rendered visual proof: an interactive map output committed to the README | Screenshot/diagram with alt text, expected sample output, no fabricated timing claims |
+| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook) | **11.12/14 (provisional)** — 10.5 weighted units (10 notebook dirs + 1 pattern file at half weight), 12 artifacts including 10 notebooks (the estate's only notebooks); voted in as 6th hero | First rendered visual proof: an interactive map output committed to the README | Screenshot/diagram with alt text, expected sample output, no fabricated timing claims |
 
 **Named alternates, in order:** GeoParquet (11.24), COG (10.96) / H3 (10.96,
 tied), DuckDB Spatial (10.81). All three of the prior list's picks that missed
@@ -52,12 +77,12 @@ MapLibre joins as a 6th hero by direct vote; the density bar is ≥12 weighted
 units **and** ≥15 artifacts; the register is the single record of the
 reconciled list.
 
-**Method.** Composite /14 = Density D (0–5, vs GeoPandas 14 units /
+**Proposed method (pending source-to-count reconciliation).** Composite /14 = Density D (0–5, vs GeoPandas 14 units /
 24 artifacts: D = ((units÷14) + (artifacts÷24)) ÷ 2 × 5), README §7 (0–4),
 and Completeness C (0–5). **Patterns rule:** files under `patterns/` count
 toward units at half weight (0.5 each) — a pattern is a reusable snippet,
 not a standalone tutorial. The rule applies to every repo equally; pattern
-counts were verified from live git trees (DuckDB 8, PostGIS 7, GDAL 6,
+counts were reported from reviewed git trees (DuckDB 8, PostGIS 7, GDAL 6,
 GeoParquet 6, COG 6, H3 6, MapLibre 1, GeoPandas/STAC/pgRouting 0). No repo
 has more than 8 pattern files, so no cap was needed.
 
