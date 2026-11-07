@@ -33,6 +33,10 @@ to verified synthetic demonstrations and supporting references, defines the
 proposed GIS Workflow Diagnostic and follow-on services, and distinguishes
 confirmed test evidence from unverified customer or deployment claims.
 
+## Proposed commercial service contracts
+
+The [machine-readable service contract registry](docs/commercial-service-contracts.json) records the proposed launch order for preliminary site screening, GIS automation and web GIS/APIs, along with required data provenance, coverage-state reporting, human review and delivery evidence. It is a **planning and QA contract**, not a claim that a product is launched, available worldwide, professionally certified or integrated across repositories. Existing [workflow service guidance](docs/workflow-services.md) remains the buyer-facing description of the separately scoped GIS Workflow Diagnostic.
+
 ## Shareable GIS demonstrations
 
 The [content experiment register](docs/shareable-content-experiments.md) connects reproducible GIS examples to short-form explainers, comparison maps, #30DayMapChallenge prompts, and AI-versus-GIS verification. It distinguishes implemented examples from research ideas, enforces data-rights and scientific accuracy checks, and keeps ZQM Labs game concepts separate from ZQM Computing services.

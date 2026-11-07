@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "owner": "ZQM Computing",
+  "status": "proposed-not-launched",
+  "business_model": "client-services-fund-reusable-products",
+  "geographic_coverage_policy": "availability-provenance-and-reuse-rights-verified-per-jurisdiction",
+  "coverage_states": [
+    "verified",
+    "partial",
+    "missing",
+    "unavailable",
+    "unverified"
+  ],
+  "policy_notes": [
+    "Worldwide applicability is a design goal, not a completeness or legal-coverage claim.",
+    "No absent intersecting feature may be treated as proof of no constraint if source coverage is missing or unverified.",
+    "Do not present preliminary GIS screening as a survey, delineation, legal determination, engineering opinion, or regulatory approval.",
+    "Client deliverables require risk-appropriate human review; production deployments require explicit security and rollback approval.",
+    "Repository references are candidate patterns, not proven runtime dependencies or production integrations."
+  ],
+  "offers": [
+    {
+      "id": "preliminary-site-screening",
+      "launch_order": 1,
+      "name": "Preliminary environmental and parcel screening",
+      "status": "scope-and-data-review-required",
+      "target_buyers": [
+        "environmental and engineering consultants",
+        "land development and real-estate teams"
+      ],
+      "delivery_modes": [
+        "report",
+        "map-package",
+        "data-package"
+      ],
+      "deliverables": [
+        "executive-screening-summary",
+        "constraint-matrix",
+        "annotated-map",
+        "source-and-limitations-register",
+        "follow-up-escalation-list"
+      ],
+      "candidate_repositories": [
+        "qgis-resources",
+        "geopandas-cookbook",
+        "gdal-cookbook",
+        "duckdb-spatial-cookbook"
+      ],
+      "required_evidence": [
+        "agreed-scope",
+        "jurisdiction",
+        "source-provenance",
+        "source-license-and-reuse-rights",
+        "data-coverage-state",
+        "effective-and-retrieval-dates",
+        "boundary-and-crs-assumptions",
+        "uncertainty-and-missing-data",
+        "reproducible-qa",
+        "reviewer-approval",
+        "professional-escalation"
+      ],
+      "review_gate": "human-approval-before-client-delivery"
+    },
+    {
+      "id": "gis-automation",
+      "launch_order": 2,
+      "name": "GIS automation and data engineering",
+      "status": "scope-and-data-review-required",
+      "target_buyers": [
+        "environmental and engineering consultants",
+        "municipal GIS and data teams",
+        "geospatial operations teams"
+      ],
+      "delivery_modes": [
+        "workflow-package",
+        "data-package",
+        "report"
+      ],
+      "deliverables": [
+        "repeatable-workflow",
+        "input-output-contract",
+        "qa-and-reconciliation-report",
+        "operator-handoff",
+        "failure-and-recovery-guide"
+      ],
+      "candidate_repositories": [
+        "geopandas-cookbook",
+        "gdal-cookbook",
+        "postgis-cookbook",
+        "prefect-cookbook"
+      ],
+      "required_evidence": [
+        "agreed-scope",
+        "source-provenance",
+        "source-license-and-reuse-rights",
+        "data-coverage-state",
+        "effective-and-retrieval-dates",
+        "uncertainty-and-missing-data",
+        "reproducible-qa",
+        "reviewer-approval",
+        "schema-contract",
+        "row-reconciliation",
+        "error-and-retry-behavior",
+        "rerun-and-recovery-test"
+      ],
+      "review_gate": "human-approval-before-client-delivery"
+    },
+    {
+      "id": "web-gis-and-apis",
+      "launch_order": 3,
+      "name": "Web GIS applications and geospatial APIs",
+      "status": "scope-and-data-review-required",
+      "target_buyers": [
+        "environmental and engineering consultants",
+        "organizations operating recurring geospatial workflows"
+      ],
+      "delivery_modes": [
+        "web-application",
+        "api",
+        "deployable-package"
+      ],
+      "deliverables": [
+        "versioned-application-or-api",
+        "architecture-and-data-contract",
+        "security-test-evidence",
+        "deployment-and-rollback-runbook",
+        "operator-handoff"
+      ],
+      "candidate_repositories": [
+        "geospatial-api-reference",
+        "maplibre-cookbook",
+        "postgis-cookbook"
+      ],
+      "required_evidence": [
+        "agreed-scope",
+        "source-provenance",
+        "source-license-and-reuse-rights",
+        "data-coverage-state",
+        "effective-and-retrieval-dates",
+        "uncertainty-and-missing-data",
+        "reproducible-qa",
+        "reviewer-approval",
+        "access-and-authorization-model",
+        "secret-handling-review",
+        "security-and-regression-tests",
+        "rollback-verification"
+      ],
+      "review_gate": "human-approval-before-client-delivery"
+    }
+  ],
+  "measurement": {
+    "commercial": [
+      "inbound-leads",
+      "qualified-leads",
+      "proposals-sent",
+      "contracts-won",
+      "gross-revenue",
+      "delivery-hours",
+      "repeat-customers"
+    ],
+    "engineering": [
+      "pr-lead-time-hours",
+      "ci-success-rate",
+      "ci-queue-minutes",
+      "change-failure-rate",
+      "post-delivery-defect-count",
+      "reusable-components-validated"
+    ]
+  }
+}
