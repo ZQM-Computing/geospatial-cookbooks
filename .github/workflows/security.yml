@@ -28,11 +28,14 @@ jobs:
           mkdir -p "$GOBIN"
           go install github.com/zricethezav/gitleaks/v8@v8.25.0
           echo "$GOBIN" >> "$GITHUB_PATH"
+      # Scan complete HEAD ancestry, not unrelated PR refs fetched by checkout.
+      # Gitleaks defaults to --all when log-opts is absent; sibling draft PRs
+      # must be evaluated by their own checks, not block this branch.
       - name: Scan full repository history
         shell: bash
         run: |
           if [ -f .gitleaks.toml ]; then
-            gitleaks git --config .gitleaks.toml --redact .
+            gitleaks git --config .gitleaks.toml --log-opts="--full-history --diff-filter=tuxdb HEAD" --redact .
           else
-            gitleaks git --redact .
+            gitleaks git --log-opts="--full-history --diff-filter=tuxdb HEAD" --redact .
           fi

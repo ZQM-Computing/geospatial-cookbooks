@@ -25,6 +25,10 @@ to verified synthetic demonstrations and supporting references, defines the
 proposed GIS Workflow Diagnostic and follow-on services, and distinguishes
 confirmed test evidence from unverified customer or deployment claims.
 
+## Shareable GIS demonstrations
+
+The [content experiment register](docs/shareable-content-experiments.md) connects reproducible GIS examples to short-form explainers, comparison maps, #30DayMapChallenge prompts, and AI-versus-GIS verification. It distinguishes implemented examples from research ideas, enforces data-rights and scientific accuracy checks, and keeps ZQM Labs game concepts separate from ZQM Computing services.
+
 ## Related application: ZQM Observatory
 
 [zqm-observatory](https://github.com/ZQM-Computing/zqm-observatory) is a separate public-data intelligence application that may reuse patterns documented by this cookbook series. It is not part of the cookbook index manifest, and the link does not assert runtime dependencies or end-to-end integration. See its [geospatial repository integration map](https://github.com/ZQM-Computing/zqm-observatory/blob/main/docs/geospatial-repository-integration.md) for proposed handoffs and the evidence required before calling them verified.
