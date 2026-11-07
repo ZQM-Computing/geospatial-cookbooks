@@ -53,8 +53,8 @@ units **and** ≥15 artifacts; the register is the single record of the
 reconciled list.
 
 **Method.** Composite /14 = Density D (0–5, vs GeoPandas 14 units /
-24 artifacts: D = ((units÷14) + (artifacts÷24)) ÷ 2 × 5) + README §7 (0–4)
-+ Completeness C (0–5). **Patterns rule:** files under `patterns/` count
+24 artifacts: D = ((units÷14) + (artifacts÷24)) ÷ 2 × 5), README §7 (0–4),
+and Completeness C (0–5). **Patterns rule:** files under `patterns/` count
 toward units at half weight (0.5 each) — a pattern is a reusable snippet,
 not a standalone tutorial. The rule applies to every repo equally; pattern
 counts were verified from live git trees (DuckDB 8, PostGIS 7, GDAL 6,
