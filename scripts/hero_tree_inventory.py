@@ -31,7 +31,7 @@ def inventory(entries):
         and isinstance(row.get("path"), str)
         and PurePosixPath(row["path"]).suffix.lower() in SOURCE_EXTENSIONS
     )
-    examples = [p for p in paths if p.startswith("examples/")]
+    if len(paths) != len(set(paths)):\n        raise ValueError("Duplicate source paths in Git tree")\n    examples = [p for p in paths if p.startswith("examples/")]
     patterns = [p for p in paths if p.startswith("patterns/")]
     demos = [p for p in paths if p.startswith("demos/")]
     dirs = sorted({"/".join(p.split("/")[:2]) for p in examples
