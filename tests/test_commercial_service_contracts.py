@@ -36,9 +36,11 @@ ADDITIONAL_EVIDENCE = {
 class CommercialServiceContractsTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        """Load the proposed service registry shared by the contract checks."""
         cls.data = json.loads(CONTRACT_PATH.read_text(encoding="utf-8"))
 
     def test_proposed_non_guaranteed_global_scope(self) -> None:
+        """Require proposed status and explicit limits on geographic coverage claims."""
         self.assertEqual(self.data["schema_version"], 1)
         self.assertEqual(self.data["owner"], "ZQM Computing")
         self.assertEqual(self.data["status"], "proposed-not-launched")
@@ -54,12 +56,14 @@ class CommercialServiceContractsTests(unittest.TestCase):
         self.assertTrue(any("not proven runtime dependencies" in note for note in self.data["policy_notes"]))
 
     def test_exactly_three_ordered_distinct_offers(self) -> None:
+        """Require the three distinct offers in their declared launch order."""
         offers = self.data["offers"]
         self.assertEqual(tuple(offer["id"] for offer in offers), EXPECTED_IDS)
         self.assertEqual([offer["launch_order"] for offer in offers], [1, 2, 3])
         self.assertEqual(len({offer["id"] for offer in offers}), 3)
 
     def test_no_offer_bypasses_provenance_qa_or_human_review(self) -> None:
+        """Require shared and offer-specific evidence plus human delivery approval."""
         for offer in self.data["offers"]:
             with self.subTest(offer=offer["id"]):
                 self.assertEqual(offer["status"], "scope-and-data-review-required")
@@ -78,6 +82,7 @@ class CommercialServiceContractsTests(unittest.TestCase):
                 self.assertTrue(offer["candidate_repositories"])
 
     def test_scorecard_has_commercial_and_engineering_metrics(self) -> None:
+        """Require core commercial and engineering metrics without duplicates."""
         scorecard = self.data["measurement"]
         self.assertIn("gross-revenue", scorecard["commercial"])
         self.assertIn("contracts-won", scorecard["commercial"])
@@ -87,6 +92,7 @@ class CommercialServiceContractsTests(unittest.TestCase):
             self.assertEqual(len(metrics), len(set(metrics)))
 
     def test_readme_links_contract_registry(self) -> None:
+        """Keep the registry discoverable through its relative README link."""
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("(docs/commercial-service-contracts.json)", readme)
 
