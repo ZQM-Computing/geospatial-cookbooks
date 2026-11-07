@@ -21,22 +21,32 @@ This guide supports **preliminary screening**, alternatives analysis, and defens
 
 External links are discovery starting points, **not live-verified downloads or guarantees of current data**. Record actual layer URLs, licensing, access dates, and metadata in each project.
 
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:a52651db042185aba4a949c68448523e96f0202b8da56211ad4ac1aef2e57bc3 -->
+
 ## Repeatable preliminary screening workflow
 
 1. **Define the decision:** parcel/site identifier, jurisdiction, proposed use, alternatives, study area, and agreed screening radius. Avoid treating parcel polygons as surveyed boundaries.
 2. **Capture provenance:** dataset owner, title, URL, retrieval time (UTC), published/effective date, license, CRS, resolution/scale, update frequency, and known limitations.
 3. **Normalize spatial data:** validate geometries, coordinate reference systems, linear units, nulls, duplicates, and topology. Preserve untouched originals.
-4. **Screen independently:** intersect candidate footprints with flood zones, wetlands inventory, hydric-soil indicators, protected areas, impaired waters, land cover, and applicable local planning overlays. Do not infer absence from missing features or unavailable layers.
-5. **Quantify uncertainty:** report intersected area and percentage with explicit units; separate measured GIS overlap from regulatory setbacks or required buffers; distinguish no intersection, no coverage, and processing failure.
+4. **Screen independently:** intersect candidate footprints with flood zones, wetlands inventory, hydric-soil indicators, protected areas, impaired waters, land cover, and applicable local planning overlays. Query USFWS IPaC for species results and EPA ECHO for facility records, and record the query dates. Do not infer absence from missing features or unavailable layers.
+5. **Quantify uncertainty:** dissolve or union overlapping polygon features within each topic before summing intersected area to avoid double counting; report intersected area and percentage with explicit units; separate measured GIS overlap from regulatory setbacks or required buffers; distinguish no intersection, no coverage, and processing failure.
 6. **Compare alternatives:** document assumptions, constraints, source confidence, and trade-offs. Avoid an unexplained composite suitability score.
 7. **Quality assurance:** verify boundary/CRS assumptions, spot-check geometry and imagery, reconcile feature counts and area totals, and have a reviewer inspect the map and limitations.
 8. **Deliver:** an executive screening summary, source register, constraint matrix, reproducible outputs, map with legend/scale/CRS/date, and an escalation list for qualified local specialists.
+
+<!-- /coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:01e53175abc9e4b09968ec24d1904ccc881272c15d054eb67c3a438352006ec4 -->
 
 ## Suggested screening matrix
 
 | Topic | GIS result | Evidence | Follow-up |
 | --- | --- | --- | --- |
-| Flood hazard | Intersects / does not intersect / unknown | FEMA panel or layer version, effective status | Local floodplain administrator |
+| Flood hazard | Special Flood Hazard Area (SFHA) intersects / other mapped zone only / does not intersect / unknown | FEMA panel or layer version, flood zone designation (for example, A, AE, or X), effective status | Local floodplain administrator |
 | Wetland indicators | Inventory overlap / no mapped overlap / unknown | NWI edition, soil indicators, imagery date | Qualified wetland professional and relevant agencies |
 | Species | Potential habitat / species screening flag / unknown | IPaC output and date | Ecologist and agency consultation as appropriate |
 | Zoning and future land use | Apparent designation / unknown | Local official map and ordinance date | Local planning/zoning staff |
@@ -44,6 +54,8 @@ External links are discovery starting points, **not live-verified downloads or g
 | Contamination | Facility-record proximity / unknown | EPA/state record ID and date | Environmental professional for appropriate due diligence |
 
 **Never** turn an absent GIS feature into a claim that a regulated resource or risk is absent.
+
+<!-- /coderabbit-ai-generated:v1 -->
 
 ## Cookbook implementation map
 
