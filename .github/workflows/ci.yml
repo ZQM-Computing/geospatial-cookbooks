@@ -25,3 +25,8 @@ jobs:
 
       - name: Validate repository index and documentation links
         run: python -m unittest discover -s tests -v
+
+      - name: Reconcile pinned hero source trees (read-only)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/hero_tree_inventory.py
