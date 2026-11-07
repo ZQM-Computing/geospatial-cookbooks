@@ -89,11 +89,17 @@ command. Do not confuse documentation density with passed execution.
 
 ### Three locked ZQM Labs surfaces (reconciled 2026-11-06)
 
+<!-- coderabbit-ai-generated:v1 -->
+
+<!-- coderabbit-ai-generated-section:v1:b56b98b9d8a1cde40ec533727d0ab5dd2a661881c7e694fb8bd7b7b3eb2a8d7f -->
+
 | Surface | Current evidence (verified live 2026-11-06) | Next improvement and truth guard |
 | --- | --- | --- |
-| [Free demo](https://zqmlabs.com/games/hunt-for-wisps/play/?demo=1) | Complete six-stop trail, no kit or code required; paid-kit upsell + $49/$199/$349/$499 pricing on the landing page. Sample JSON in [quest-packs](https://github.com/ZQM-Labs/quest-packs/tree/main/sample-quest) | Make its README a clear two-path choice: **read/learn** vs. **plan a real hosted route**. Changing waypoint coordinates and QR configuration remains necessary for physical play; the embedded Wisp browser demo is a distinct product. The landing copy still says "Halloween scavenger hunt" — evergreen it to year-round before it fronts a launch |
+| [Free demo](https://zqmlabs.com/games/hunt-for-wisps/play/?demo=1) | Complete six-stop trail, no kit or code required; paid-kit upsell + $49/$199/$349/$499 pricing on the landing page. Sample JSON in [quest-packs](https://github.com/ZQM-Labs/quest-packs/tree/main/sample-quest) | In `ZQM-Labs/quest-packs`, make `sample-quest/README.md` a clear two-path choice: **read/learn** vs. **plan a real hosted route**. Changing waypoint coordinates and QR configuration remains necessary for physical play; the embedded Wisp browser demo is a distinct product. Separately, the Wisp browser demo landing copy still says "Halloween scavenger hunt" — evergreen it to year-round before it fronts a launch |
 | [Host Handbook](https://docs.zqmlabs.com/hosting/) | Complete 7-page handbook; "about one hour, total" is the clearest conversion promise in the estate | Answer-first walkthrough from an original prompt to safe six-stop JSON, validation, on-device compatibility, permissions and field playtest. **Evergreen first:** it still frames the game as the Oct 30–Nov 1, 2026 Halloween window |
 | [Organizer Toolkit](https://organize.zqmlabs.com/) | Checklist + working QR generator + print specs + day-of troubleshooting + FAQ; the only surface that makes a host self-sufficient | A single safe start-to-finish host checklist, including support boundary, version pin, optional sharing consent and human confirmation of venue readiness |
+
+<!-- /coderabbit-ai-generated:v1 -->
 
 ### Content quality rubric
 
