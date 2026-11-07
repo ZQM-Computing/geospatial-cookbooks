@@ -17,6 +17,17 @@ SOURCES = {
                  "19e159f7715891e1d42ad9e1c1812480ce8a81da"),
 }
 SOURCE_EXTENSIONS = {".py", ".html", ".ipynb", ".sql"}
+# Verified against complete GitHub trees in the initial reconciliation CI run.
+# Fail closed if the counting code no longer reproduces that evidence.
+EXPECTED = {
+    "geopandas": (13, 20, 0, 1, 13.0, 20),
+    "maplibre": (10, 20, 1, 0, 10.5, 21),
+}
+COUNT_FIELDS = (
+    "example_directory_count", "example_source_file_count",
+    "pattern_source_file_count", "demo_source_file_count",
+    "weighted_units_without_demos", "source_artifact_count_excluding_demos",
+)
 
 
 def inventory(entries):
@@ -71,6 +82,9 @@ def main():
     output = {}
     for name, (repo, sha) in SOURCES.items():
         result = inventory(fetch_tree(repo, sha))
+        observed = tuple(result[field] for field in COUNT_FIELDS)
+        if observed != EXPECTED[name]:
+            raise ValueError(f"Count mismatch for {repo}@{sha}: {observed} != {EXPECTED[name]}")
         result.update({"repository": repo, "commit": sha, "tree_complete": True})
         output[name] = result
     print(json.dumps(output, indent=2, sort_keys=True))
