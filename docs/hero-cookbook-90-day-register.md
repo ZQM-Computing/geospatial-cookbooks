@@ -43,6 +43,19 @@ Two source-review findings remain open:
   defensible under a unique-example-directory rule, but its 12-artifact
   assertion has no independently reproducible definition.
 
+**Source-reconciliation snapshot (not a validated denominator):**
+
+| Repository and pinned source | README's enumerated examples | Separate reviewed tree observation | Unresolved counting question |
+| --- | --- | --- | --- |
+| [GeoPandas](https://github.com/ZQM-Computing/geopandas-cookbook/tree/c15f63ff7e708f8b0023e97804c1a8896f5d4b49) | Patterns 01–12 listed as twelve tutorial entries | Previous review of tree `7f897781fe9e8f019817df3e45ab2ec409fa079b` found thirteen example directories and `demos/workflow_qa.py` | Whether split 12, three named demos, and artifacts are distinct or overlapping units |
+| [MapLibre](https://github.com/ZQM-Computing/maplibre-cookbook/tree/19e159f7715891e1d42ad9e1c1812480ce8a81da) | Patterns 01–06 listed as six HTML tutorials | Previous review of the same pinned tree found ten notebook files, ten HTML files, and one SQL pattern | Whether one multi-format example is one unit, which files count as artifacts, and whether README is stale |
+
+The README listings are direct documentary evidence, not a complete recursive
+tree manifest. The tree observations above are attributed to the recorded
+review rather than reproduced by this register. **Neither is sufficient to
+certify the 14-unit/24-artifact baseline or the 10.5-unit/12-artifact claim.**
+Do not update rankings from these partial counts alone.
+
 Before approving the weighted ranking, freeze each source repository's
 commit SHA, publish a machine-readable per-path classification
 (`example_unit`, `pattern_half_unit`, `demo`, `artifact`, or
