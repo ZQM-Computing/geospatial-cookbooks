@@ -160,6 +160,33 @@ as passed.
 A hero becomes a launch candidate when its selected core examples satisfy
 all six criteria. A repo-wide badge alone is insufficient.
 
+## Rank 1 commercial evidence overlay (November 2026)
+
+This **environmental GIS subcontracting use case** is separate from the
+historical six-hero source-density selection. It does not change or validate
+the weighted counts above. The two primary demonstrations are
+[PostGIS Pattern 08](https://github.com/ZQM-Computing/postgis-cookbook/pull/47)
+and [GeoPandas synthetic exhibit handoff](https://github.com/ZQM-Computing/geopandas-cookbook/pull/48).
+Both are pending independent PR review and exact-head gate verification;
+a passing repository CI badge does not establish a client deliverable.
+
+**Buyer:** environmental and engineering consultants with map/figure
+production, parcel-level screening, source QA and repeat GIS capacity needs.
+
+**Acceptance:** synthetic geometry; no real land claims; mandatory dataset,
+publisher and retrieval-date register; separate known overlap and absent
+source coverage; current CRS/SRID with correct measurement units; reproducible
+CI and negative tests; clear limitations. Professional determinations,
+wetland field delineations, Phase I ESAs, property surveys and permit approval
+are **not** included. Test any cross-repository handoff separately before
+calling it integrated.
+
+**Secondary support:** [GDAL](https://github.com/ZQM-Computing/gdal-cookbook)
+for transformation and format prep, and
+[QGIS resources](https://github.com/ZQM-Computing/qgis-resources)
+for layout/figure review. They remain supporting, not replacements for the
+primary tested source/coverage controls.
+
 ## Sequencing: 90 days (not an automated schedule)
 
 | Phase | Window | Concrete review deliverable |
