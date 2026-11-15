@@ -25,6 +25,31 @@ Start with the [five hero cookbook evidence quickstarts](docs/five-hero-evidence
 
 The [hero and Labs documentation execution register](docs/hero-cookbook-90-day-register.md) prioritizes **GeoPandas, STAC, DuckDB Spatial, GeoParquet and COG**, plus three distinct ZQM Labs learning/hosting surfaces. It includes source-directory inventory, runnable-example correctness gates, query-shaped documentation criteria, a staged 90-day plan, and truth requirements before a coordinated launch. The inventory is **not** a claim of measured referral traffic, passed latest-commit execution for every example, completed events or new revenue. Other cookbooks remain indexed without a superficial 90-repo launch push.
 
+## Rank 1: environmental GIS subcontracting evidence
+
+For environmental consultants and engineering teams planning **permit exhibit
+data preparation, map series, parcel constraints screening, and QA/QC**, the
+primary technical demonstrations are:
+
+- **PostGIS primary:** [environmental constraints Pattern 08](https://github.com/ZQM-Computing/postgis-cookbook/blob/main/patterns/08_environmental_constraints.sql) demonstrates source coverage, synthetic wetland/flood indicators, EPSG:2236 area, provenance and QA. See [PR #47](https://github.com/ZQM-Computing/postgis-cookbook/pull/47); verify latest exact-head CI before relying on it.
+- **GeoPandas primary:** [synthetic exhibit handoff](https://github.com/ZQM-Computing/geopandas-cookbook/blob/main/examples/12-environmental-screening/exhibit_prep.py) demonstrates coverage-aware screening with a source register, GeoPackage, CSV, limitations and checksums. See [PR #48](https://github.com/ZQM-Computing/geopandas-cookbook/pull/48); verify latest exact-head CI before relying on it.
+
+These are **documentary/code reference links**, not runtime integrations or
+customer-delivery evidence. A PostGIS workflow measuring in **EPSG:2236 US
+survey feet** converts 43,560 square feet per acre; the GeoPandas fixture in
+**EPSG:32617 metres** uses 4,046.8564224 square metres per acre. Never
+silently mix units or equate absent source coverage with a clean parcel.
+
+All examples are **synthetic desktop/database analyses**. They are **not**
+field wetland delineations, jurisdictional determinations, Phase I
+environmental site assessments, boundary surveys, professional certifications,
+or regulatory approvals. Real use requires a source/date register, uncertainty
+disclosure, licensing checks and qualified professional verification.
+
+The ranked **commercial buyer use case** is separate from this repository's
+historical hero-cookbook density scoring and does not retroactively change
+that ranking.
+
 ## For engineering and environmental teams
 
 For engineering and environmental teams evaluating paid workflow improvements,
