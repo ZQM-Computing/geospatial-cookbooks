@@ -31,10 +31,8 @@ For environmental consultants and engineering teams planning **permit exhibit
 data preparation, map series, parcel constraints screening, and QA/QC**, the
 primary technical demonstrations are:
 
-| Cookbook | Synthetic production-style capability | Review state |
-| --- | --- | --- |
-| [PostGIS environmental constraints pattern](https://github.com/ZQM-Computing/postgis-cookbook/blob/main/patterns/08_environmental_constraints.sql) | Source coverage, wetland/flood-style indicators, EPSG:2236 area/pct, provenance and data-gap QA | [Rank 1 PR #47](https://github.com/ZQM-Computing/postgis-cookbook/pull/47); verify latest exact-head CI before relying on it |
-| [GeoPandas environmental exhibit handoff](https://github.com/ZQM-Computing/geopandas-cookbook/blob/main/examples/12-environmental-screening/exhibit_prep.py) | Synthetic screening package, source register, GeoPackage, CSV, limitations and checksums | [Rank 1 PR #48](https://github.com/ZQM-Computing/geopandas-cookbook/pull/48); verify latest exact-head CI before relying on it |
+- **PostGIS primary:** [environmental constraints Pattern 08](https://github.com/ZQM-Computing/postgis-cookbook/blob/main/patterns/08_environmental_constraints.sql) demonstrates source coverage, synthetic wetland/flood indicators, EPSG:2236 area, provenance and QA. See [PR #47](https://github.com/ZQM-Computing/postgis-cookbook/pull/47); verify latest exact-head CI before relying on it.
+- **GeoPandas primary:** [synthetic exhibit handoff](https://github.com/ZQM-Computing/geopandas-cookbook/blob/main/examples/12-environmental-screening/exhibit_prep.py) demonstrates coverage-aware screening with a source register, GeoPackage, CSV, limitations and checksums. See [PR #48](https://github.com/ZQM-Computing/geopandas-cookbook/pull/48); verify latest exact-head CI before relying on it.
 
 These are **documentary/code reference links**, not runtime integrations or
 customer-delivery evidence. A PostGIS workflow measuring in **EPSG:2236 US
