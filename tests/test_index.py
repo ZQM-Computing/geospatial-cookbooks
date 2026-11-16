@@ -37,17 +37,18 @@ class RepositoryIndexTests(unittest.TestCase):
 
     def test_repository_table_links_are_unique_and_canonical(self) -> None:
         rows = re.findall(
-            r"^\|\s*\[([^\]]+)\]\((https://github\.com/[^)]+)\)\s*\|",
+            r"^\|\s*\[([^\]]+)\]\(([^)]*)\)\s*\|",
             README,
             flags=re.MULTILINE,
         )
         self.assertGreaterEqual(len(rows), 10, "Expected a useful repository index, not an empty placeholder")
         slugs: list[str] = []
         for label, url in rows:
-            parts = url.rstrip("/").split("/")
-            self.assertEqual(parts[-2], "ZQM-Computing", f"Unexpected owner for {label}: {url}")
-            self.assertEqual(label, parts[-1], f"Link label and repository slug differ: {label} -> {url}")
-            slugs.append(parts[-1])
+            repository = re.fullmatch(r"https://github\.com/ZQM-Computing/([A-Za-z0-9_.-]+)/?", url)
+            self.assertIsNotNone(repository, f"Noncanonical repository URL for {label}: {url}")
+            slug = repository.group(1)
+            self.assertEqual(label, slug, f"Link label and repository slug differ: {label} -> {url}")
+            slugs.append(slug)
         self.assertEqual(len(slugs), len(set(slugs)), "Repository table contains duplicate repository entries")
 
     def test_local_markdown_links_resolve(self) -> None:
@@ -60,7 +61,7 @@ class RepositoryIndexTests(unittest.TestCase):
             local_target = target.split("#", 1)[0].split("?", 1)[0]
             if not local_target:
                 continue
-            candidate = (ROOT / local_target).resolve()
+            candidate = (ROOT / local_target.removeprefix("/")).resolve()
             if not candidate.exists():
                 missing.append(target)
         self.assertEqual(missing, [], f"Broken local README links: {missing}")
